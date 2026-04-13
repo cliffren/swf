@@ -32,10 +32,18 @@
 - 数据和中间结果归档
 
 ## Phase 4 — Figure 组装
-- 更新框架图（主图1）
-- 主图2-3：Benchmark/验证结果
-- 主图4：性能（时间/内存/显存）
-- 主图5-6：Case 结果或 Feature 展示
+
+工具链：
+- **框架图** → `/swf:fig framework` — Claude 通过 draw.io MCP 生成，迭代后导出 SVG，可在 draw.io 桌面版精修
+- **数据图** → `/swf:fig plot` — Claude 写 matplotlib/seaborn 代码，可复现
+- **拼装规划** → `/swf:fig assemble` — 列出所有子图状态，发现缺口
+- **精修**（可选） → draw.io 桌面版 / Figma / Illustrator / PPT
+
+任务清单：
+- 框架图（主图1）— `/swf:fig framework`
+- 主图2-3：Benchmark/验证结果 — `/swf:fig plot`
+- 主图4：性能（时间/内存/显存）— `/swf:fig plot`
+- 主图5-6：Case 结果或 Feature 展示 — `/swf:fig plot`
 - 补充图
 - 拼成 publication-quality 完整 figure
 - 每个 figure 撰写 legend

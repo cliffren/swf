@@ -81,7 +81,7 @@ Each project has 8 phases, mapped to Linear Project Milestones:
 
 **Phases are not strictly linear.** You can draft Methods as early as late Phase 1, and create figures during experiment downtime. `/swf:plan` proactively suggests tasks that can be started ahead of schedule.
 
-## All Skills (14)
+## All Skills (15)
 
 ### Project Lifecycle
 
@@ -116,6 +116,16 @@ Each project has 8 phases, mapped to Linear Project Milestones:
 | `/swf:exp log <id>` | Record results and conclusions for a completed experiment |
 | `/swf:exp compare [id...]` | Side-by-side comparison table of multiple experiments |
 | `/swf:exp collect` | Summarize all results, map to paper figures, identify gaps |
+
+### Figures
+
+| Command | Description |
+|---------|-------------|
+| `/swf:fig framework <desc>` | Create framework diagram via draw.io MCP (or Figma MCP), iterate and export |
+| `/swf:fig plot <desc>` | Write matplotlib/seaborn code to generate data plots (reproducible, committed to git) |
+| `/swf:fig assemble` | Inventory sub-figures, create manual assembly tasks in Linear, generate legends |
+| `/swf:fig legend [fig-number]` | Write figure legend (Nature-style, validates error bars/n values/stats) |
+| `/swf:fig list` | List all figures with status |
 
 ### Documentation
 
@@ -273,3 +283,5 @@ type (task type)              executor (who does it)
 - **GitHub CLI** — `gh`, for repo creation
 - **Git** — version control
 - **Superpowers plugin** (recommended) — development execution workflow
+- **draw.io MCP** (recommended) — `claude mcp add -s user drawio -- npx @next-ai-drawio/mcp-server@latest`
+- **Figma MCP** (optional) — available via Claude Code's built-in Figma integration

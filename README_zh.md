@@ -81,7 +81,7 @@ claude plugin install cliffren/swf
 
 **Phase 不是严格线性的。** Methods 初稿在 Phase 1 末就能写，等实验的间隙可以做图。`/swf:plan` 会主动建议可提前做的任务。
 
-## 全部 Skills（14 个）
+## 全部 Skills（15 个）
 
 ### 项目生命周期
 
@@ -116,6 +116,16 @@ claude plugin install cliffren/swf
 | `/swf:exp log <id>` | 跑完后填结果、写结论 |
 | `/swf:exp compare [id...]` | 多实验对比表 |
 | `/swf:exp collect` | 汇总所有结果，标注对应论文 Figure，发现缺口 |
+
+### 图表
+
+| 命令 | 说明 |
+|------|------|
+| `/swf:fig framework <描述>` | 通过 draw.io MCP（或 Figma MCP）创建框架图，迭代后导出 |
+| `/swf:fig plot <描述>` | 写 matplotlib/seaborn 画图代码（可复现，提交到 git） |
+| `/swf:fig assemble` | 盘点子图，在 Linear 建手动拼装任务，生成 figure legends |
+| `/swf:fig legend [fig编号]` | 写 figure legend（Nature 格式，自动检查 error bars/n 值/统计量） |
+| `/swf:fig list` | 列出所有图表及状态 |
 
 ### 文档
 
@@ -273,3 +283,5 @@ type（任务类型）             executor（执行者）
 - **GitHub CLI** — `gh`，用于创建 repo
 - **Git** — 版本控制
 - **Superpowers 插件**（推荐） — 开发执行流程
+- **draw.io MCP**（推荐） — `claude mcp add -s user drawio -- npx @next-ai-drawio/mcp-server@latest`
+- **Figma MCP**（可选） — Claude Code 内置 Figma 集成

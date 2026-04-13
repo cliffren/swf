@@ -25,7 +25,9 @@ project-root/
 ├── configs/                   # 实验配置文件（进 git，可复现）
 │   └── .gitkeep
 ├── results/                   # 实验产出（不进 git，太大）
-│   └── .gitkeep
+│   ├── .gitkeep
+│   └── figures/               # 论文图表产出（.svg/.png/.pdf）
+│       └── .gitkeep
 └── .claude/
     └── settings.json
 ```
