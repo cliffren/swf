@@ -91,32 +91,34 @@ Each project has 8 phases, mapped to Linear Project Milestones:
 
 ## All Skills (15)
 
-### Project Lifecycle
+Skills are divided into two scopes:
+
+- **Global** — run from anywhere, operate across projects via Linear
+- **Project** — run from inside a project repo (`cd ~/Projects/my-project`), operate on local files + that project's Linear issues
+
+### Global Commands (run from anywhere)
 
 | Command | Description |
 |---------|-------------|
-| `/swf:idea <name>` | Log a new idea with evaluation sub-issues |
-| `/swf:promote` | Interactively select an idea, create independent Project + repo |
-| `/swf:import` | Import an existing project, infer phase from repo, scaffold missing docs |
-| `/swf:archive [project]` | Clean up Done issues, show quota usage (free tier: 250 limit) |
+| `/swf:idea <name>` | Log a new idea into the Ideas project with evaluation sub-issues |
+| `/swf:promote` | Graduate an evaluated idea into an independent Project + repo |
+| `/swf:import` | Import an existing project into the SWF workflow |
+| `/swf:status [project]` | Cross-project dashboard, or single project detail |
+| `/swf:daily [type-label]` | Today's tasks across all projects, filterable by label |
+| `/swf:archive [project]` | Clean up Done issues, show quota usage |
 
-### Task Execution
+### Project Commands (run from inside a project repo)
 
-| Command | Description |
-|---------|-------------|
-| `/swf:context` | Read CLAUDE.md + roadmap + design.md + Linear + git log, summarize project state |
-| `/swf:next [label]` | Pick up next Todo issue from Linear, mark In Progress, start working |
-| `/swf:done [issue-id]` | Write completion summary comment, mark Done, suggest next steps |
-
-### Planning & Monitoring
+**Task Execution:**
 
 | Command | Description |
 |---------|-------------|
-| `/swf:status [project]` | Global dashboard or single project detail (phase, issue counts) |
-| `/swf:daily [type-label]` | Cross-project daily tasks, filterable by dev/writing/figures etc. |
-| `/swf:plan <project>` | Read design.md + current progress, plan current and parallelizable issues |
+| `/swf:context` | Read CLAUDE.md + roadmap + design.md + Linear + git log, summarize current state |
+| `/swf:next [label]` | Pick up next Todo issue, mark In Progress, start working |
+| `/swf:done [issue-id]` | Write completion summary, mark Done, suggest next steps |
+| `/swf:plan <project>` | Plan next batch of issues from design docs and current progress |
 
-### Experiment Management
+**Experiments:**
 
 | Command | Description |
 |---------|-------------|
@@ -125,17 +127,17 @@ Each project has 8 phases, mapped to Linear Project Milestones:
 | `/swf:exp compare [id...]` | Side-by-side comparison table of multiple experiments |
 | `/swf:exp collect` | Summarize all results, map to paper figures, identify gaps |
 
-### Figures
+**Figures:**
 
 | Command | Description |
 |---------|-------------|
-| `/swf:fig framework <desc>` | Create framework diagram via draw.io MCP (or Figma MCP), iterate and export |
-| `/swf:fig plot <desc>` | Write matplotlib/seaborn code to generate data plots (reproducible, committed to git) |
-| `/swf:fig assemble` | Inventory sub-figures, create manual assembly tasks in Linear, generate legends |
+| `/swf:fig framework <desc>` | Create framework diagram via draw.io MCP (or Figma MCP) |
+| `/swf:fig plot <desc>` | Write matplotlib/seaborn code to generate data plots |
+| `/swf:fig assemble` | Inventory sub-figures, create assembly tasks in Linear, generate legends |
 | `/swf:fig legend [fig-number]` | Write figure legend (Nature-style, validates error bars/n values/stats) |
 | `/swf:fig list` | List all figures with status |
 
-### Documentation
+**Documentation:**
 
 | Command | Description |
 |---------|-------------|
@@ -198,17 +200,15 @@ Experiment records go into git (`docs/experiments/`), configs go into git (`conf
 
 ## Daily Usage
 
-### Starting Your Day
+### Starting Your Day (global — from any directory)
 
 ```bash
-# Cross-project daily tasks
-/swf:daily
-
-# Filter by type (Monday = writing day, Wednesday = experiments...)
-/swf:daily writing
+/swf:status               # Cross-project progress dashboard
+/swf:daily                # What should I work on today?
+/swf:daily writing        # Monday = writing day, filter by label
 ```
 
-### Working on a Project
+### Working on a Project (project — cd into repo first)
 
 ```bash
 cd ~/Projects/my-project
@@ -221,11 +221,15 @@ cd ~/Projects/my-project
 ### Periodic Operations
 
 ```bash
+# Global
+/swf:idea "new research direction"   # Log a new idea
+/swf:status               # Check all projects
+/swf:archive              # Clean up Done issues
+
+# Project (from inside repo)
 /swf:plan my-project      # Plan next batch of issues
 /swf:adr "Switch to sparse matrix"  # Record architecture decision
 /swf:design               # Sync design.md
-/swf:status               # Global progress dashboard
-/swf:archive              # Clean up Done issues
 ```
 
 ### Multi-Project Parallel Work

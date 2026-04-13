@@ -91,32 +91,34 @@ gh auth status
 
 ## 全部 Skills（15 个）
 
-### 项目生命周期
+Skills 分为两个作用域：
+
+- **全局命令** — 在任何目录下运行，通过 Linear 跨项目操作
+- **项目命令** — 在项目 repo 目录内运行（`cd ~/Projects/my-project`），操作本地文件和该项目的 Linear issues
+
+### 全局命令（在任何目录下运行）
 
 | 命令 | 说明 |
 |------|------|
 | `/swf:idea <name>` | 新想法进 Ideas 漏斗，建评估 sub-issues |
 | `/swf:promote` | 交互式选择想法，建独立 Project + repo |
 | `/swf:import` | 导入已有项目，分析 repo 推断 Phase，补齐文档 |
+| `/swf:status [project]` | 跨项目仪表盘，或单项目详情 |
+| `/swf:daily [type-label]` | 跨项目今日待办，可按 label 过滤 |
 | `/swf:archive [project]` | 清理 Done issues，显示 250 额度使用情况 |
 
-### 任务执行
+### 项目命令（在项目 repo 目录内运行）
+
+**任务执行：**
 
 | 命令 | 说明 |
 |------|------|
-| `/swf:context` | 读 CLAUDE.md + roadmap + design.md + Linear + git log，汇报项目全貌 |
-| `/swf:next [label]` | 从 Linear 领下一个 Todo issue，标 In Progress，开始执行 |
-| `/swf:done [issue-id]` | 写完成摘要评论，标 Done，提示下一步 |
-
-### 规划与监控
-
-| 命令 | 说明 |
-|------|------|
-| `/swf:status [project]` | 全局仪表盘或单项目详情（Phase、issue 统计） |
-| `/swf:daily [type-label]` | 跨项目今日待办，可按 dev/writing/figures 等过滤 |
+| `/swf:context` | 读 CLAUDE.md + roadmap + design.md + Linear + git log，汇报当前状态 |
+| `/swf:next [label]` | 领下一个 Todo issue，标 In Progress，开始执行 |
+| `/swf:done [issue-id]` | 写完成摘要，标 Done，提示下一步 |
 | `/swf:plan <project>` | 读 design.md + 当前进度，规划当前和可提前做的 issues |
 
-### 实验管理
+**实验：**
 
 | 命令 | 说明 |
 |------|------|
@@ -125,17 +127,17 @@ gh auth status
 | `/swf:exp compare [id...]` | 多实验对比表 |
 | `/swf:exp collect` | 汇总所有结果，标注对应论文 Figure，发现缺口 |
 
-### 图表
+**图表：**
 
 | 命令 | 说明 |
 |------|------|
-| `/swf:fig framework <描述>` | 通过 draw.io MCP（或 Figma MCP）创建框架图，迭代后导出 |
+| `/swf:fig framework <描述>` | 通过 draw.io MCP（或 Figma MCP）创建框架图 |
 | `/swf:fig plot <描述>` | 写 matplotlib/seaborn 画图代码（可复现，提交到 git） |
 | `/swf:fig assemble` | 盘点子图，在 Linear 建手动拼装任务，生成 figure legends |
 | `/swf:fig legend [fig编号]` | 写 figure legend（Nature 格式，自动检查 error bars/n 值/统计量） |
 | `/swf:fig list` | 列出所有图表及状态 |
 
-### 文档
+**文档：**
 
 | 命令 | 说明 |
 |------|------|
@@ -198,17 +200,15 @@ docs/experiments/
 
 ## 日常使用
 
-### 早上开始工作
+### 早上开始工作（全局 — 在任何目录下）
 
 ```bash
-# 跨项目看今日待办
-/swf:daily
-
-# 按类型过滤（周一写作日、周三实验日...）
-/swf:daily writing
+/swf:status               # 跨项目进度仪表盘
+/swf:daily                # 今天做什么？
+/swf:daily writing        # 周一写作日，按 label 过滤
 ```
 
-### 进入某个项目
+### 进入某个项目（项目内 — 先 cd 到 repo）
 
 ```bash
 cd ~/Projects/my-project
@@ -221,11 +221,15 @@ cd ~/Projects/my-project
 ### 阶段性操作
 
 ```bash
+# 全局
+/swf:idea "新研究方向"     # 记录新想法
+/swf:status               # 查看所有项目
+/swf:archive              # 清理 Done issues
+
+# 项目内（在 repo 目录里）
 /swf:plan my-project      # 规划下一批 issues
 /swf:adr "改用 sparse"    # 记录架构决策
 /swf:design               # 同步更新设计文档
-/swf:status               # 全局进度仪表盘
-/swf:archive              # 清理 Done issues
 ```
 
 ### 多项目并行
