@@ -1,0 +1,15 @@
+{
+  "name": "swf",
+  "description": "Scientific Workflow: multi-project research lifecycle management with Linear integration",
+  "version": "0.1.0",
+  "author": {
+    "name": "Tao"
+  },
+  "keywords": [
+    "scientific-workflow",
+    "research",
+    "linear",
+    "project-management",
+    "multi-project"
+  ]
+}
