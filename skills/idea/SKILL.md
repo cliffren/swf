@@ -24,11 +24,11 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
 
    | Sub-issue | Labels |
    |-----------|--------|
-   | 文献调研：领域进展、找到 gap | `writing`, `manual` |
-   | 评估意义/创新性/可行性 | `writing`, `manual` |
-   | 技术选型 | `dev`, `agent:claude` |
+   | 文献调研：领域进展、找到 gap | `writing`, `agent:claude` |
+   | 评估意义/创新性/可行性 | `writing`, `agent:claude` |
+   | 技术选型 | `writing`, `agent:claude` |
    | 撰写 design.md 初稿 | `writing`, `agent:claude` |
-   | 画框架图初版 | `figures`, `manual` |
+   | 画框架图初版 | `figures`, `agent:claude` |
 
 3. **Confirm** — show the user what was created with links
 
