@@ -83,11 +83,17 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    - If user says yes, start working on the first sub-issue (mark In Progress, begin literature review)
    - If user says no, leave it for later
 
-5. **Between sub-issues:**
-   - After completing each sub-issue, automatically:
-     - Mark it Done
-     - Move the next sub-issue from Backlog to Todo
-     - Ask: "下一步是 [next sub-issue]，要继续吗？"
+5. **Between sub-issues — review and confirm before marking Done:**
+   - After drafting each sub-issue's deliverable, DO NOT mark Done immediately. Instead:
+     1. Present the result to the user (summary + key findings/decisions)
+     2. Ask for feedback: "你觉得这个分析有什么需要补充或调整的吗？"
+     3. Iterate based on user input — user may have domain knowledge, different perspectives, or additional requirements
+     4. Only mark Done after user explicitly confirms: "可以" / "没问题" / "通过"
+     5. Update the local file with the confirmed version
+     6. Post brief summary to Linear issue comment
+     7. Move the next sub-issue from Backlog to Todo
+     8. Ask: "下一步是 [next sub-issue]，要继续吗？"
+
    - After ② (可行性评估), add a gate check:
      - "基于文献和可行性分析，这个想法值得继续推进吗？"
      - If no → archive the idea, mark remaining sub-issues Canceled
