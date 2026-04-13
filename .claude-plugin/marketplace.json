@@ -1,0 +1,15 @@
+{
+  "name": "swf-marketplace",
+  "description": "Scientific Workflow plugin marketplace",
+  "owner": {
+    "name": "cliffren"
+  },
+  "plugins": [
+    {
+      "name": "swf",
+      "description": "Scientific Workflow: multi-project research lifecycle management with Linear integration",
+      "version": "0.1.0",
+      "source": "./"
+    }
+  ]
+}
