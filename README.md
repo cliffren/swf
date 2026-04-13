@@ -6,6 +6,8 @@ A Claude Code plugin for managing multi-project research workflows. Covers the f
 
 ## Installation
 
+**Install as a global (user-scope) plugin.** SWF commands operate across projects (`/swf:status`, `/swf:daily`, `/swf:idea`, etc.), so they need to be available in every directory. Installing as a project plugin would limit access to a single repo.
+
 ```bash
 # Prerequisite: connect Linear MCP
 claude mcp add --transport http linear-server https://mcp.linear.app/mcp -s user
@@ -13,8 +15,8 @@ claude mcp add --transport http linear-server https://mcp.linear.app/mcp -s user
 # Prerequisite: ensure GitHub CLI is authenticated
 gh auth status
 
-# Install the plugin
-claude plugin install /path/to/swf
+# Install the plugin (global scope)
+claude plugin install cliffren/swf
 ```
 
 ## Core Philosophy
