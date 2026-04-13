@@ -26,12 +26,12 @@ Show what to work on today, across all projects.
    [过滤: writing]
 
    ### In Progress — 继续做
-   - REG-8: 撰写 Results 初稿 (RegOracle, Phase 5)
-   - PRAI-3: design.md 初稿 (Ideas)
+   - PRJ-8: 撰写 Results 初稿 (Project A, Phase 5)
+   - PRJ-3: design.md 初稿 (Ideas)
 
    ### Todo — 可以开始
-   - REG-10: Introduction 初稿 (RegOracle, Phase 5)
-   - SEAFA-5: 文献综述 (SEAFA, Phase 1)
+   - PRJ-10: Introduction 初稿 (Project A, Phase 5)
+   - PRJ-5: 文献综述 (Project B, Phase 1)
 
    共 4 个任务
    ```

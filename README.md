@@ -48,7 +48,7 @@ Idea → Evaluate → Establish → Develop → Validate → Deep Analysis → F
 All ideas go through the Ideas Project for evaluation before becoming independent projects.
 
 ```
-/swf:idea "Gene Regulatory Network Inference"
+/swf:idea "Scalable Single-Cell Analysis"
 │  → Creates main issue in Ideas Project
 │  → Auto-creates 5 evaluation sub-issues:
 │     Literature review, feasibility, tech selection, design.md draft, architecture diagram
@@ -193,7 +193,7 @@ Experiment records go into git (`docs/experiments/`), configs go into git (`conf
 ### Working on a Project
 
 ```bash
-cd ~/Projects/RegOracle
+cd ~/Projects/my-project
 /swf:context              # Where is the project? What's in progress?
 /swf:next dev             # Pick up a dev task
 # ...use Superpowers for development...
@@ -203,7 +203,7 @@ cd ~/Projects/RegOracle
 ### Periodic Operations
 
 ```bash
-/swf:plan RegOracle       # Plan next batch of issues
+/swf:plan my-project      # Plan next batch of issues
 /swf:adr "Switch to sparse matrix"  # Record architecture decision
 /swf:design               # Sync design.md
 /swf:status               # Global progress dashboard
@@ -215,9 +215,9 @@ cd ~/Projects/RegOracle
 ```
 /swf:status
 → | Project   | Phase   | In Progress | Todo |
-  | RegOracle | Phase 3 | 1           | 3    |
-  | PRAI      | Phase 1 | 2           | 5    |
-  | SEAFA     | Phase 5 | 0           | 4    |
+  | Project A | Phase 3 | 1           | 3    |
+  | Project B | Phase 1 | 2           | 5    |
+  | Project C | Phase 5 | 0           | 4    |
 ```
 
 `/swf:daily` aggregates tasks by label across projects, reducing context switching.

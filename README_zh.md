@@ -48,7 +48,7 @@ claude plugin install cliffren/swf
 所有想法先进 Ideas Project 评估，通过后才建独立项目。
 
 ```
-/swf:idea "基因调控网络推断"
+/swf:idea "单细胞可扩展分析"
 │  → 在 Ideas Project 建主 issue
 │  → 自动建 5 个评估 sub-issues：
 │     文献调研、可行性评估、技术选型、design.md 初稿、框架图
@@ -193,7 +193,7 @@ docs/experiments/
 ### 进入某个项目
 
 ```bash
-cd ~/Projects/RegOracle
+cd ~/Projects/my-project
 /swf:context              # 项目到哪了、正在做什么
 /swf:next dev             # 领一个 dev 任务
 # ...用 superpowers 开发...
@@ -203,7 +203,7 @@ cd ~/Projects/RegOracle
 ### 阶段性操作
 
 ```bash
-/swf:plan RegOracle       # 规划下一批 issues
+/swf:plan my-project      # 规划下一批 issues
 /swf:adr "改用 sparse"    # 记录架构决策
 /swf:design               # 同步更新设计文档
 /swf:status               # 全局进度仪表盘
@@ -215,9 +215,9 @@ cd ~/Projects/RegOracle
 ```
 /swf:status
 → | 项目      | Phase   | 进行中 | 待办 |
-  | RegOracle | Phase 3 | 1     | 3   |
-  | PRAI      | Phase 1 | 2     | 5   |
-  | SEAFA     | Phase 5 | 0     | 4   |
+  | Project A | Phase 3 | 1     | 3   |
+  | Project B | Phase 1 | 2     | 5   |
+  | Project C | Phase 5 | 0     | 4   |
 ```
 
 `/swf:daily` 按 label 跨项目聚合同类工作，减少上下文切换。

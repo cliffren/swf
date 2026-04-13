@@ -44,7 +44,7 @@ Analyze current project state and create the next batch of issues in Linear.
 
 5. **Present to user:**
    ```
-   ## 规划：RegOracle Phase 2
+   ## 规划：MyProject Phase 2
 
    基于 design.md 和当前进度，建议新建以下 issues：
 
