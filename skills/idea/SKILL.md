@@ -30,14 +30,45 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    | 撰写 design.md 初稿 | `writing`, `agent:claude` |
    | 画框架图初版 | `figures`, `agent:claude` |
 
-3. **Confirm** — show the user what was created with links
+3. **Set up evaluation order:**
+   - The 5 sub-issues have dependencies:
+     ```
+     ① 文献调研 → ② 评估可行性 → ③ 技术选型 → ④ design.md 初稿 → ⑤ 框架图
+     ```
+   - Set ① to Todo, rest to Backlog
+   - Use Linear's blocking relations: ② blocked by ①, ③ blocked by ②, etc.
+
+4. **Guide next steps:**
+   - Show the user what was created with links
+   - Prompt:
+     ```
+     已创建想法和 5 个评估任务。建议按以下顺序推进：
+
+     1. 文献调研 → 了解领域现状和 gap
+     2. 评估可行性 → 基于文献判断值不值得做
+     3. 技术选型 → 确定实现方案
+     4. design.md → 写架构设计初稿
+     5. 框架图 → 画方法总览图
+
+     第一个任务"文献调研"已设为 Todo。
+     要现在开始吗？我可以直接帮你做文献调研。
+     ```
+   - If user says yes, start working on the first sub-issue (mark In Progress, begin literature review)
+   - If user says no, leave it for later
+
+5. **Between sub-issues:**
+   - After completing each sub-issue, automatically:
+     - Mark it Done
+     - Move the next sub-issue from Backlog to Todo
+     - Ask: "下一步是 [next sub-issue]，要继续吗？"
+   - After ② (可行性评估), add a gate check:
+     - "基于文献和可行性分析，这个想法值得继续推进吗？"
+     - If no → archive the idea, mark remaining sub-issues Canceled
+     - If yes → continue to ③
+
+6. **After all sub-issues Done:**
+   - Prompt: "评估全部完成，要用 `/swf:promote` 建独立项目吗？"
 
 ## References
 
 For Linear workspace config, see: `${CLAUDE_SKILL_DIR}/../reference/linear-config.md`
-
-## Notes
-
-- All sub-issues start in Backlog status
-- The user decides the order and timing of evaluation
-- When all evaluation sub-issues are Done, prompt the user: "评估完成，要用 `/swf:promote` 建独立项目吗？"
