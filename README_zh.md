@@ -15,9 +15,17 @@ claude mcp add --transport http linear-server https://mcp.linear.app/mcp -s user
 # 前置：确保 GitHub CLI 已登录
 gh auth status
 
-# 安装插件（全局）
-claude plugin install cliffren/swf
+# 1. 添加 marketplace
+/plugin marketplace add cliffren/swf
+
+# 2. 安装插件
+/plugin install swf@cliffren-swf
+
+# 3. 重载
+/reload-plugins
 ```
+
+第 1-3 步在 Claude Code 提示符中输入（不是 bash）。安装后所有 `/swf:*` 命令全局可用。
 
 ## 核心理念
 

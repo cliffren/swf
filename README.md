@@ -15,9 +15,17 @@ claude mcp add --transport http linear-server https://mcp.linear.app/mcp -s user
 # Prerequisite: ensure GitHub CLI is authenticated
 gh auth status
 
-# Install the plugin (global scope)
-claude plugin install cliffren/swf
+# 1. Add the marketplace
+/plugin marketplace add cliffren/swf
+
+# 2. Install the plugin
+/plugin install swf@cliffren-swf
+
+# 3. Reload
+/reload-plugins
 ```
+
+Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, all `/swf:*` commands are globally available.
 
 ## Core Philosophy
 
