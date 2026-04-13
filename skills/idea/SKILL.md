@@ -20,7 +20,17 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    - Status: Backlog
    - Ask the user for a 1-2 sentence description of the idea
 
-2. **Create evaluation sub-issues** under the main issue:
+2. **Discuss and clarify the idea** with the user before creating sub-issues:
+   - Ask one question at a time:
+     - "这个想法要解决什么问题？"
+     - "和现有方法/工具的区别是什么？"
+     - "大致的技术思路是什么？"
+     - "预期的贡献是什么？（方法创新？性能提升？新应用？）"
+   - Summarize the discussion into a clear idea statement
+   - Save to `~/Projects/ideas/<idea-slug>/idea-statement.md`
+   - Update the main issue description with the idea statement
+
+3. **Create evaluation sub-issues** under the main issue:
 
    | Sub-issue | Labels |
    |-----------|--------|
@@ -36,6 +46,7 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    - Evaluation outputs go here as markdown files:
      ```
      ~/Projects/ideas/<idea-slug>/
+     ├── idea-statement.md        ← 想法讨论梳理
      ├── literature-review.md     ← 文献调研
      ├── feasibility.md           ← 可行性评估
      ├── tech-selection.md        ← 技术选型
@@ -50,6 +61,7 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
      ```
      ① 文献调研 → ② 评估可行性 → ③ 技术选型 → ④ design.md 初稿 → ⑤ 框架图
      ```
+   - Note: idea discussion (step 2) happens BEFORE sub-issues are created, so it's not a sub-issue
    - Set ① to Todo, rest to Backlog
    - Use Linear's blocking relations: ② blocked by ①, ③ blocked by ②, etc.
 
