@@ -30,7 +30,22 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    | 撰写 design.md 初稿 | `writing`, `agent:claude` |
    | 画框架图初版 | `figures`, `agent:claude` |
 
-3. **Set up evaluation order:**
+3. **Create local workspace:**
+   - Create directory: `~/Projects/ideas/<idea-slug>/`
+   - This is NOT a git repo, just a local workspace for evaluation drafts
+   - Evaluation outputs go here as markdown files:
+     ```
+     ~/Projects/ideas/<idea-slug>/
+     ├── literature-review.md     ← 文献调研
+     ├── feasibility.md           ← 可行性评估
+     ├── tech-selection.md        ← 技术选型
+     ├── design.md                ← design.md 初稿
+     └── framework.svg            ← 框架图
+     ```
+   - After each sub-issue is done, post a brief summary (3-5 sentences) as a Linear issue comment, with detailed content in the local file
+   - When `/swf:promote` runs, it migrates `design.md` and `framework.svg` into the new repo
+
+4. **Set up evaluation order:**
    - The 5 sub-issues have dependencies:
      ```
      ① 文献调研 → ② 评估可行性 → ③ 技术选型 → ④ design.md 初稿 → ⑤ 框架图

@@ -52,7 +52,10 @@ Graduate an idea from the Ideas project into a full independent project.
    - Create standard directory structure
    - Generate CLAUDE.md from template (`${CLAUDE_SKILL_DIR}/../reference/claude-md-template.md`)
    - Generate docs/roadmap.md from phase template, mark "当前阶段：Phase 1"
-   - If design.md draft exists from evaluation, copy it to docs/design.md
+   - Migrate files from Ideas workspace (`~/Projects/ideas/<idea-slug>/`):
+     - `design.md` → `docs/design.md`
+     - `framework.svg` → `results/figures/fig1-framework.svg` (if exists)
+     - `literature-review.md` → `docs/literature-review.md` (if exists, as reference)
    - Commit and push
 
 7. **Archive the Ideas issue:**
