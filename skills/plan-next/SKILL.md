@@ -83,7 +83,7 @@ Analyze current project state and create the next batch of issues in Linear.
 
 ## Quota Check
 
-Before creating issues, check the current issue count (list all non-archived issues).
-- If count + new issues > 200: warn "当前 X/250 issues，建议先完成一些任务等待自动归档"
-- If count + new issues > 240: block and suggest reducing scope or waiting for auto-archive
+When loading project state (step 1), count total non-archived issues from the results — no extra API call needed.
+- If count + new issues > 200: warn "当前 X/250 issues，建议运行 /swf:archive"
+- If count + new issues > 240: block and suggest archiving first
 - Only plan the current Phase's issues, don't over-plan future Phases unless user asks
