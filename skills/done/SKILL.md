@@ -44,5 +44,5 @@ Complete a task by documenting what was done and updating Linear.
 5. **Suggest next steps:**
    - Check remaining Todo issues in the project
    - If there are more: "还有 N 个 Todo issue，要继续吗？(`/swf:next`)"
-   - If none: "当前 milestone 的任务都完成了，要规划下一批吗？(`/swf:plan`)"
+   - If none: "当前 milestone 的任务都完成了，要规划下一批吗？(`/swf:plan-next`)"
    - If ADR-worthy decisions were made: "这个任务涉及架构决策，要记录 ADR 吗？(`/swf:adr`)"

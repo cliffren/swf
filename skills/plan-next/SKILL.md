@@ -1,5 +1,5 @@
 ---
-name: plan
+name: plan-next
 description: "Read project state and design docs, then create the next batch of Linear issues for a project"
 argument-hint: <project>
 disable-model-invocation: true

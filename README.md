@@ -6,7 +6,7 @@ A Claude Code plugin for managing multi-project research workflows. Covers the f
 
 ## Installation
 
-**Install as a global (user-scope) plugin.** SWF commands operate across projects (`/swf:status`, `/swf:daily`, `/swf:idea`, etc.), so they need to be available in every directory. Installing as a project plugin would limit access to a single repo.
+**Install as a global (user-scope) plugin.** SWF commands operate across projects (`/swf:dashboard`, `/swf:daily`, `/swf:idea`, etc.), so they need to be available in every directory. Installing as a project plugin would limit access to a single repo.
 
 ```bash
 # Prerequisite: connect Linear MCP
@@ -103,7 +103,7 @@ Skills are divided into two scopes:
 | `/swf:idea <name>` | Log a new idea into the Ideas project with evaluation sub-issues |
 | `/swf:promote` | Graduate an evaluated idea into an independent Project + repo |
 | `/swf:import` | Import an existing project into the SWF workflow |
-| `/swf:status [project]` | Cross-project dashboard, or single project detail |
+| `/swf:dashboard [project]` | Cross-project dashboard, or single project detail |
 | `/swf:daily [type-label]` | Today's tasks across all projects, filterable by label |
 | `/swf:archive [project]` | Clean up Done issues, show quota usage |
 
@@ -116,7 +116,7 @@ Skills are divided into two scopes:
 | `/swf:load` | Read CLAUDE.md + roadmap + design.md + Linear + git log, summarize current state |
 | `/swf:next [label]` | Pick up next Todo issue, mark In Progress, start working |
 | `/swf:done [issue-id]` | Write completion summary, mark Done, suggest next steps |
-| `/swf:plan <project>` | Plan next batch of issues from design docs and current progress |
+| `/swf:plan-next <project>` | Plan next batch of issues from design docs and current progress |
 
 **Experiments:**
 
@@ -203,7 +203,7 @@ Experiment records go into git (`docs/experiments/`), configs go into git (`conf
 ### Starting Your Day (global — from any directory)
 
 ```bash
-/swf:status               # Cross-project progress dashboard
+/swf:dashboard               # Cross-project progress dashboard
 /swf:daily                # What should I work on today?
 /swf:daily writing        # Monday = writing day, filter by label
 ```
@@ -223,11 +223,11 @@ cd ~/Projects/my-project
 ```bash
 # Global
 /swf:idea "new research direction"   # Log a new idea
-/swf:status               # Check all projects
+/swf:dashboard               # Check all projects
 /swf:archive              # Clean up Done issues
 
 # Project (from inside repo)
-/swf:plan my-project      # Plan next batch of issues
+/swf:plan-next my-project      # Plan next batch of issues
 /swf:adr "Switch to sparse matrix"  # Record architecture decision
 /swf:design               # Sync design.md
 ```
@@ -235,7 +235,7 @@ cd ~/Projects/my-project
 ### Multi-Project Parallel Work
 
 ```
-/swf:status
+/swf:dashboard
 → | Project   | Phase   | In Progress | Todo |
   | Project A | Phase 3 | 1           | 3    |
   | Project B | Phase 1 | 2           | 5    |

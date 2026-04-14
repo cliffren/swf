@@ -106,7 +106,7 @@ Bring an existing research project into the SWF workflow without disrupting curr
 
      下一步:
      - /swf:context  查看项目全貌
-     - /swf:plan     规划当前阶段的 issues
+     - /swf:plan-next     规划当前阶段的 issues
      ```
 
 ## Safety

@@ -1,5 +1,5 @@
 ---
-name: status
+name: dashboard
 description: "Dashboard view of all projects or a single project: current phase, issue counts, blockers"
 argument-hint: "[project]"
 disable-model-invocation: true

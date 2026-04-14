@@ -45,5 +45,5 @@ Fetch the next available Todo issue from Linear and start executing it.
 ## Notes
 
 - Only picks up one task at a time
-- If there are no Todo issues, suggest running `/swf:plan` to create new ones
+- If there are no Todo issues, suggest running `/swf:plan-next` to create new ones
 - Respect executor labels: don't pick up `manual` tasks, only `agent:claude` or unlabeled
