@@ -54,7 +54,7 @@ Graduate an idea from the Ideas project into a full independent project.
    - Generate docs/roadmap.md from phase template, mark "当前阶段：Phase 1"
    - Copy (not move) files from Ideas workspace (`~/Projects/ideas/<idea-slug>/`):
      - `design.md` → `docs/design.md`
-     - `framework.svg` → `results/figures/fig1-framework.svg` (if exists)
+     - `framework.svg` → `docs/paper/figures/fig1-framework.svg` (if exists)
      - `literature-review.md` → `docs/literature-review.md` (if exists)
    - Keep the original Ideas workspace intact for reference
    - Commit and push

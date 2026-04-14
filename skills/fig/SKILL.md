@@ -40,7 +40,7 @@ Create a framework/architecture diagram (typically Fig.1 of a paper).
      - `.drawio` → for further editing in draw.io desktop
      - `.svg` → for paper inclusion (vector, scalable)
      - `.png` → for quick preview
-   - Save to `results/figures/` or `docs/paper/figures/`
+   - Save to `docs/paper/figures/`
 
 4. **Figma workflow:**
    - Use `generate_diagram` to create in FigJam
@@ -71,7 +71,7 @@ Generate a data visualization figure from experiment results.
      - Legend if multiple series
      - Color-blind friendly palette
      - High DPI (300+)
-   - Save figure to `results/figures/`
+   - Save figure to `docs/paper/figures/`
 
 3. **Run and iterate:**
    - Execute the script
@@ -87,21 +87,21 @@ Plan figure assembly, create tasks in Linear for manual assembly, and generate l
 
 1. **Read paper outline** from `docs/paper/outline.md`
 2. **List all available sub-figures:**
-   - Framework diagrams in `results/figures/`
-   - Data plots in `results/figures/`
+   - Framework diagrams in `docs/paper/figures/`
+   - Data plots in `docs/paper/figures/`
    - Experiment result figures from `docs/experiments/`
 3. **Generate assembly plan:**
    ```
    ## Figure Assembly Plan
 
    ### Fig.1 — Method Overview (框架图)
-   - Source: results/figures/framework.svg
+   - Source: docs/paper/figures/framework.svg
    - Status: Done
    - Tool: draw.io
 
    ### Fig.2 — Benchmark Comparison (数据图)
-   - Panel a: results/figures/benchmark-accuracy.pdf
-   - Panel b: results/figures/benchmark-speed.pdf
+   - Panel a: docs/paper/figures/benchmark-accuracy.pdf
+   - Panel b: docs/paper/figures/benchmark-speed.pdf
    - Status: Panel a done, Panel b missing
    - Tool: matplotlib
 
@@ -127,7 +127,7 @@ Plan figure assembly, create tasks in Linear for manual assembly, and generate l
        - 加 a/b panel 标签（大写，粗体，左上角）
        - 统一字体和字号
        - 对齐面板边距
-       - 导出为 results/figures/fig2-benchmark.pdf (300 dpi+)
+       - 导出为 docs/paper/figures/fig2-benchmark.pdf (300 dpi+)
      ```
    - Figures with missing sub-figures → skip, note in plan
 
@@ -141,7 +141,7 @@ Plan figure assembly, create tasks in Linear for manual assembly, and generate l
 
 List all figures in the project with their status.
 
-1. **Scan** `results/figures/`, `docs/paper/figures/`, and experiment result directories
+1. **Scan** `docs/paper/figures/` and experiment result directories
 2. **Cross-reference** with paper outline to map to Fig.1, Fig.2, etc.
 3. **Show status table:**
    ```
@@ -212,4 +212,4 @@ Use matplotlib's `viridis`, `plasma`, or `cividis` colormaps.
 - Framework diagrams: iterate with Claude via MCP, then optionally refine in draw.io desktop or Illustrator
 - Data plots: always generate via code (reproducible), never draw manually
 - All plotting scripts should be committed to git
-- Final figures for submission should be in `results/figures/` with clear naming: `fig1-framework.svg`, `fig2a-benchmark.pdf`, etc.
+- Final figures for submission should be in `docs/paper/figures/` with clear naming: `fig1-framework.svg`, `fig2a-benchmark.pdf`, etc.

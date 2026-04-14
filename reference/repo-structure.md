@@ -17,6 +17,8 @@ project-root/
 │   │   └── case/             # Phase 3: Case study / Feature demo
 │   │       └── .gitkeep
 │   └── paper/
+│       ├── figures/           # 论文图表（进 git）
+│       │   └── .gitkeep
 │       └── .gitkeep
 ├── src/
 │   └── .gitkeep
