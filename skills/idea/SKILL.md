@@ -57,13 +57,14 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    - When `/swf:promote` runs, it migrates `design.md` and `framework.svg` into the new repo
 
 4. **Set up evaluation order:**
-   - The 5 sub-issues have dependencies:
+   - The sub-issues have dependencies:
      ```
-     ① 文献调研 → ② 评估可行性 → ③ 技术选型 → ④ design.md 初稿 → ⑤ 框架图
+     ① 文献调研 → ② 评估可行性 → ③ 技术选型 → ④ design.md 初稿
+     ⑤ 框架图（独立，不阻塞，Backlog）
      ```
    - Note: idea discussion (step 2) happens BEFORE sub-issues are created, so it's not a sub-issue
-   - All sub-issues set to Todo (they are all confirmed work, not tentative)
-   - Use Linear's blocking relations to control execution order: ② blocked by ①, ③ blocked by ②, etc.
+   - ①~④ set to Todo, with blocking relations: ② blocked by ①, ③ blocked by ②, ④ blocked by ③
+   - ⑤ 框架图 set to Backlog — optional during evaluation, can be done if time permits or deferred to after promote
 
 4. **Guide next steps:**
    - Show the user what was created with links
