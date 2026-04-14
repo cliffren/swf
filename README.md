@@ -113,7 +113,7 @@ Skills are divided into two scopes:
 
 | Command | Description |
 |---------|-------------|
-| `/swf:context` | Read CLAUDE.md + roadmap + design.md + Linear + git log, summarize current state |
+| `/swf:load` | Read CLAUDE.md + roadmap + design.md + Linear + git log, summarize current state |
 | `/swf:next [label]` | Pick up next Todo issue, mark In Progress, start working |
 | `/swf:done [issue-id]` | Write completion summary, mark Done, suggest next steps |
 | `/swf:plan <project>` | Plan next batch of issues from design docs and current progress |
