@@ -299,6 +299,18 @@ project-root/
 
 ## Linear 配置
 
+### 为什么用 Linear
+
+Linear 不只是一个任务数据库，而是一个交互式控制中心：
+
+- **可视化项目和任务看板** — 所有项目的 issues 一目了然
+- **自由编辑和创建任务** — 随时在网页或手机上添加任务、调整优先级、修改描述
+- **从 Linear 端直接分配任务给 agent** — 右键 issue → "Work on issue" → agent 立即开始执行
+- **AI 生成的动态摘要（Pulse）** — 自动生成每日/每周项目进展总结
+- **多设备访问** — 网页、桌面、手机 App 全同步
+
+SWF 命令和 Linear 自身的 UI 是同一套工作流的两个互补入口。更多功能可探索 [Linear 官方文档](https://linear.app/docs)。
+
 ### 结构
 
 - **Ideas Project** — 立项评估漏斗（全局，长期存在）

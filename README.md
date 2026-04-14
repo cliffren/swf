@@ -299,6 +299,18 @@ project-root/
 
 ## Linear Configuration
 
+### Why Linear
+
+Linear is not just a task database — it's an interactive control center:
+
+- **Visual project and task boards** — see all issues across projects at a glance
+- **Freely edit and create issues** — add tasks, adjust priorities, rewrite descriptions anytime from the web or mobile app
+- **Dispatch tasks to agents directly** — right-click an issue → "Work on issue" → agent starts executing immediately
+- **AI-generated digests (Pulse)** — automatic daily/weekly summaries of project activity
+- **Cross-device access** — web, desktop, and mobile apps, all synced
+
+SWF commands and Linear's own UI are complementary entry points to the same workflow. There's more to explore in [Linear's documentation](https://linear.app/docs).
+
 ### Structure
 
 - **Ideas Project** — Evaluation funnel (global, persistent)
