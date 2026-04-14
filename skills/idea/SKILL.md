@@ -101,11 +101,11 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
      - If yes → continue to ③
 
 6. **After ①~④ all Done:**
+   - Main issue auto-closes via Linear's "auto-close parent issue" setting — do NOT manually mark it Done
    - Check if ⑤ 框架图 is still in Backlog
    - Ask: "核心评估已完成。要现在画框架图吗？还是直接进入 promote？"
-     - If user wants to draw → move ⑤ to Todo, start working on it. After ⑤ Done, mark main issue Done and prompt promote
-     - If user wants to skip → keep ⑤ in Backlog, mark main issue Done, prompt: "要用 `/swf:promote` 建独立项目吗？"
-   - If ⑤ was already Done (user did it earlier) → mark main issue Done, prompt promote
+     - If user wants to draw → move ⑤ to Todo, start working on it. After done, prompt promote
+     - If user wants to skip → keep ⑤ in Backlog, prompt: "要用 `/swf:promote` 建独立项目吗？"
 
 ## Literature Review Template
 
