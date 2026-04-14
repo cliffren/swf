@@ -8,12 +8,18 @@ description: "Review recent ADRs, experiments, and code changes, then update doc
 
 Review recent changes and update `docs/design.md` to keep it current.
 
+## Prerequisite
+
+Every design.md change MUST be backed by an ADR. If no recent ADR exists:
+- Ask: "没有找到未同步的 ADR。要先用 `/swf:adr` 记录决策吗？"
+- Do NOT proceed to modify design.md without an ADR as justification
+- Exception: updating data/numbers based on experiment results (e.g., performance figures) — these reference the experiment record instead of an ADR
+
 ## Workflow
 
 1. **Gather what changed:**
    - Read all ADRs in `docs/adr/` — identify any not yet reflected in design.md
-   - Read experiment results in `docs/experiments/` — any findings that change the design
-   - Check recent git history for architectural changes
+   - Read experiment results in `docs/experiments/` — any findings that update data/numbers in design
    - Read current `docs/design.md`
 
 2. **Identify deltas:**
@@ -50,3 +56,4 @@ Review recent changes and update `docs/design.md` to keep it current.
 - NEVER delete existing content without explicit approval — prefer updating or annotating
 - If there are no changes needed, say so: "design.md 已是最新，无需更新"
 - This is the ONLY approved way to modify design.md (per CLAUDE.md conventions)
+- Every change must trace back to an ADR or experiment record — no ad-hoc edits
