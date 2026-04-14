@@ -58,7 +58,7 @@ Create a new Architecture Decision Record in the project's `docs/adr/` directory
 
 5. **Prompt for design update:**
    - Check if the decision affects `docs/design.md`
-   - If yes: "这个决策影响到 design.md，要运行 `/swf:design` 更新吗？"
+   - If yes: "这个决策影响到 design.md，要运行 `/swf:update-design` 更新吗？"
 
 ## Rules
 

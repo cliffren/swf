@@ -142,7 +142,7 @@ Skills 分为两个作用域：
 | 命令 | 说明 |
 |------|------|
 | `/swf:adr <title>` | 写架构决策记录（自动编号，只增不改） |
-| `/swf:design` | 根据最近 ADR/实验/代码变更，更新 design.md |
+| `/swf:update-design` | 根据最近 ADR/实验/代码变更，更新 design.md |
 | `/swf:paper [section]` | 生成论文 outline 或起草指定 section |
 | `/swf:paper declarations` | 自动收集作者贡献、基金、数据/代码可用性等声明 |
 | `/swf:paper checklist` | 投稿前逐项检查（参考 Nature 系列要求） |
@@ -229,7 +229,7 @@ cd ~/Projects/my-project
 # 项目内（在 repo 目录里）
 /swf:plan-next my-project      # 规划下一批 issues
 /swf:adr "改用 sparse"    # 记录架构决策
-/swf:design               # 同步更新设计文档
+/swf:update-design               # 同步更新设计文档
 ```
 
 ### 多项目并行
@@ -254,7 +254,7 @@ project-root/
 ├── .gitignore                    # 排除 results/ 和数据文件
 ├── docs/
 │   ├── roadmap.md                # 路线图，标记当前 Phase
-│   ├── design.md                 # 架构设计（仅通过 /swf:design 修改）
+│   ├── design.md                 # 架构设计（仅通过 /swf:update-design 修改）
 │   ├── adr/                      # 架构决策记录（只增不改）
 │   ├── experiments/
 │   │   ├── benchmark/            # Phase 2 实验记录

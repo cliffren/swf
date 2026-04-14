@@ -142,7 +142,7 @@ Skills are divided into two scopes:
 | Command | Description |
 |---------|-------------|
 | `/swf:adr <title>` | Write Architecture Decision Record (auto-numbered, append-only) |
-| `/swf:design` | Update design.md based on recent ADRs/experiments/code changes |
+| `/swf:update-design` | Update design.md based on recent ADRs/experiments/code changes |
 | `/swf:paper [section]` | Generate paper outline or draft a specific section |
 | `/swf:paper declarations` | Auto-collect author contributions, funding, data/code availability |
 | `/swf:paper checklist` | Pre-submission checklist (based on Nature-series requirements) |
@@ -229,7 +229,7 @@ cd ~/Projects/my-project
 # Project (from inside repo)
 /swf:plan-next my-project      # Plan next batch of issues
 /swf:adr "Switch to sparse matrix"  # Record architecture decision
-/swf:design               # Sync design.md
+/swf:update-design               # Sync design.md
 ```
 
 ### Multi-Project Parallel Work
@@ -254,7 +254,7 @@ project-root/
 ├── .gitignore                    # Excludes results/ and data files
 ├── docs/
 │   ├── roadmap.md                # Roadmap, marks current Phase
-│   ├── design.md                 # Architecture design (modify only via /swf:design)
+│   ├── design.md                 # Architecture design (modify only via /swf:update-design)
 │   ├── adr/                      # Architecture Decision Records (append-only)
 │   ├── experiments/
 │   │   ├── benchmark/            # Phase 2 experiment records

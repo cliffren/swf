@@ -39,7 +39,7 @@
 - results/ 目录不进 git，configs/ 和 docs/experiments/ 进 git
 
 ## 文档保护
-- design.md 只能通过 `/swf:design` 更新，不能在开发任务中顺手改
+- design.md 只能通过 `/swf:update-design` 更新，不能在开发任务中顺手改
 - ADR 只增不改
 - 如果实现和设计有冲突，先在 issue 评论里提出，等确认后再改设计
 

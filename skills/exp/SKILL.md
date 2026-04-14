@@ -80,7 +80,7 @@ Record results for a completed experiment.
 5. **Commit** the updated record
 6. **Prompt next steps:**
    - "要和其他实验比较吗？(`/swf:exp compare`)"
-   - "要更新 design.md 吗？(`/swf:design`)"
+   - "要更新 design.md 吗？(`/swf:update-design`)"
    - If results invalidate assumptions: "实验结果和 design.md 假设不一致，建议写 ADR 记录 (`/swf:adr`)"
 
 ---
