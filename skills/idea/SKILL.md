@@ -35,7 +35,7 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    | Sub-issue | Labels | Output template |
    |-----------|--------|----------------|
    | 文献调研：领域进展、找到 gap | `writing`, `agent:claude` | see below |
-   | 评估意义/创新性/可行性 | `writing`, `agent:claude` |
+   | 评估意义/创新性/可行性 | `writing`, `agent:claude` | merge key insights into literature-review.md |
    | 技术选型 | `writing`, `agent:claude` |
    | 撰写 design.md 初稿 | `writing`, `agent:claude` |
    | 画框架图初版 | `figures`, `agent:claude` |
@@ -130,6 +130,13 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
 
 ## 我们的机会
 <这个想法如何填补 gap，和已有工作的区别>
+
+## 意义与可行性（从可行性评估合并）
+<完成可行性评估后，将关键观点合并到此处>
+- 研究意义：...
+- 创新性：...
+- 可行性判断：...
+- 潜在挑战：...
 ```
 
 Notes:
