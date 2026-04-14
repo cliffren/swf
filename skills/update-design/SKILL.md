@@ -13,13 +13,12 @@ Review recent changes and update `docs/design.md` to keep it current.
 Every design.md change MUST be backed by an ADR. If no recent ADR exists:
 - Ask: "没有找到未同步的 ADR。要先用 `/swf:adr` 记录决策吗？"
 - Do NOT proceed to modify design.md without an ADR as justification
-- Exception: updating data/numbers based on experiment results (e.g., performance figures) — these reference the experiment record instead of an ADR
+- No exceptions
 
 ## Workflow
 
 1. **Gather what changed:**
    - Read all ADRs in `docs/adr/` — identify any not yet reflected in design.md
-   - Read experiment results in `docs/experiments/` — any findings that update data/numbers in design
    - Read current `docs/design.md`
 
 2. **Identify deltas:**
