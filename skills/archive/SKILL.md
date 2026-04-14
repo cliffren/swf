@@ -41,20 +41,29 @@ Export completed issues to the Archive project as Documents, then guide user to 
      - Use `list_documents` with `project: "Archive"` and search for current month title
    - If exists: use `update_document` to append new entries
    - If not: use `create_document` with `project: "Archive"`, titled `归档 YYYY-MM`
-   - Content format: one line per issue, grouped by project and phase, minimal info only:
+   - Content format, grouped by project and phase:
      ```markdown
      # 归档 2026-04
 
      ## spaharmony — Phase 1
-     - [Done] TAO-11: 发布 v1：整理文档 + 发布 PyPI (2026-04-14)
-     - [Done] TAO-14: v2: Harmony 主循环迁移至 CuPy (2026-04-18)
+
+     ### [Done] TAO-11: 发布 v1：整理文档 + 发布 PyPI (2026-04-14)
+     **Comments:**
+     - [2026-04-14] 已发布 v1.0.0，README 包含安装说明...
+
+     ### [Done] TAO-14: v2: Harmony 主循环迁移至 CuPy (2026-04-18)
+     (no comments)
 
      ## Ideas
-     - [Done] TAO-5: Spatial Harmony 评估 (2026-04-14)
-     - [Canceled] TAO-99: 某个放弃的想法 (2026-04-10)
+     ### [Done] TAO-5: Spatial Harmony 评估 (2026-04-14)
+     (no comments)
+
+     ### [Canceled] TAO-99: 某个放弃的想法 (2026-04-10)
+     (no comments)
      ```
-   - Only record: status, issue ID, title, completion date
-   - Do NOT fetch descriptions, comments, or labels — saves token and these info live in git history
+   - Record: status, issue ID, title, completion date, comments
+   - Fetch comments with `list_comments` for each issue
+   - Skip descriptions and labels — these live in git history
 
 4. **Guide user to delete originals:**
    ```
@@ -77,6 +86,6 @@ Export completed issues to the Archive project as Documents, then guide user to 
 
 - Never delete issues via MCP (Linear MCP doesn't support it anyway)
 - Always export BEFORE telling user to delete
-- Only record status, issue ID, title, and completion date — descriptions, comments, labels live in git history
+- Record status, issue ID, title, completion date, and comments — descriptions and labels live in git history
 - One Document per month, append if archiving multiple times in the same month
 - The Archive project itself should never have issues, only Documents
