@@ -227,7 +227,7 @@ Agent picks up each issue, executes it, writes a completion summary comment on L
 
 **Full automation (possible but not recommended):**
 ```bash
-/loop /swf:next                    # Theoretically runs forever
+/loop "Check current project: if there are Todo issues, pick one up with /swf:next and do it. If none, run /swf:plan-next to plan the next batch, then continue."
 ```
 
 This can work, but you lose control over design decisions, phase transitions, and experiment interpretation. The sweet spot is: **human controls direction and pace, agent handles batch execution.**
