@@ -36,11 +36,14 @@ Export completed issues to the Archive project as Documents, then guide user to 
    确认归档吗？
    ```
 
-3. **Export to Archive project Document:**
-   - Create one Document per batch, titled: `归档 YYYY-MM-DD`
-   - Document content in markdown, grouped by project:
+3. **Export to Archive project Document (按月合并):**
+   - Check if a Document titled `归档 YYYY-MM` already exists in Archive project:
+     - Use `list_documents` with `project: "Archive"` and search for current month title
+   - If exists: use `update_document` to append new entries
+   - If not: use `create_document` with `project: "Archive"`, titled `归档 YYYY-MM`
+   - Content format, grouped by project, each entry with date:
      ```markdown
-     # 归档 2026-04-14
+     # 归档 2026-04
 
      ## spaharmony
 
@@ -54,6 +57,8 @@ Export completed issues to the Archive project as Documents, then guide user to 
      - **Comments:**
        (include all comments if any)
 
+     ---
+
      ### TAO-XX: ...
 
      ## Ideas
@@ -61,7 +66,6 @@ Export completed issues to the Archive project as Documents, then guide user to 
      ### TAO-5: Spatial Harmony 评估
      - ...
      ```
-   - Use `create_document` with `project: "Archive"`
 
 4. **Guide user to delete originals:**
    ```
@@ -85,5 +89,5 @@ Export completed issues to the Archive project as Documents, then guide user to 
 - Never delete issues via MCP (Linear MCP doesn't support it anyway)
 - Always export BEFORE telling user to delete
 - Include full issue content in the Document: title, description, labels, milestone, comments, completion date
-- One Document per archive batch, not per issue (avoid document bloat)
+- One Document per month, append if archiving multiple times in the same month
 - The Archive project itself should never have issues, only Documents
