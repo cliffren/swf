@@ -17,6 +17,8 @@ Export completed issues to the Archive project as Documents, then guide user to 
 
 1. **Query archivable issues:**
    - List all issues with status Done or Canceled (excluding Archive project itself)
+   - **Keep recent Done issues:** only archive Done issues completed more than 7 days ago. Recent ones serve as working context for ongoing development.
+   - Canceled issues can be archived immediately (no context value)
    - If a project is specified, filter by that project
    - Group by project
 
