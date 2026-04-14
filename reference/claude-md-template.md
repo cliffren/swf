@@ -44,7 +44,7 @@
 - 如果实现和设计有冲突，先在 issue 评论里提出，等确认后再改设计
 
 ## 项目规划
-参见 docs/roadmap.md，当前阶段：Phase _
+当前阶段：Phase _（详见 Linear Project）
 
 ## 当前架构
 参见 docs/design.md

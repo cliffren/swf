@@ -113,7 +113,7 @@ Skills 分为两个作用域：
 
 | 命令 | 说明 |
 |------|------|
-| `/swf:load` | 读 CLAUDE.md + roadmap + design.md + Linear + git log，汇报当前状态 |
+| `/swf:load` | 读 CLAUDE.md + design.md + Linear + git log，汇报当前状态 |
 | `/swf:next [label]` | 领下一个 Todo issue，标 In Progress，开始执行 |
 | `/swf:done [issue-id]` | 写完成摘要，标 Done，提示下一步 |
 | `/swf:plan-next <project>` | 读 design.md + 当前进度，规划当前和可提前做的 issues |
@@ -253,7 +253,6 @@ project-root/
 ├── CLAUDE.md                     # Agent 工作指南
 ├── .gitignore                    # 排除 results/ 和数据文件
 ├── docs/
-│   ├── roadmap.md                # 路线图，标记当前 Phase
 │   ├── design.md                 # 架构设计（仅通过 /swf:update-design 修改）
 │   ├── adr/                      # 架构决策记录（只增不改）
 │   ├── experiments/

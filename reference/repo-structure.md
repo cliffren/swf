@@ -7,7 +7,6 @@ project-root/
 ├── CLAUDE.md                  # 从 claude-md-template.md 生成
 ├── .gitignore                 # 排除 results/
 ├── docs/
-│   ├── roadmap.md             # 从 phase-template.md 生成，填入项目信息
 │   ├── design.md              # Phase 0 产出的设计文档
 │   ├── adr/                   # 架构决策记录
 │   │   └── .gitkeep
@@ -64,7 +63,6 @@ __pycache__/
 ## 文件说明
 
 - **CLAUDE.md** — Agent 工作指南，必须维护
-- **docs/roadmap.md** — 路线图，标记当前 Phase
 - **docs/design.md** — 架构设计、核心公式（从 Ideas 评估阶段迁入）
 - **docs/adr/** — 架构决策记录，agent 写、人审
 - **docs/experiments/** — 实验结果，agent 产出

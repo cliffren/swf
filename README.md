@@ -113,7 +113,7 @@ Skills are divided into two scopes:
 
 | Command | Description |
 |---------|-------------|
-| `/swf:load` | Read CLAUDE.md + roadmap + design.md + Linear + git log, summarize current state |
+| `/swf:load` | Read CLAUDE.md + design.md + Linear + git log, summarize current state |
 | `/swf:next [label]` | Pick up next Todo issue, mark In Progress, start working |
 | `/swf:done [issue-id]` | Write completion summary, mark Done, suggest next steps |
 | `/swf:plan-next <project>` | Plan next batch of issues from design docs and current progress |
@@ -253,7 +253,6 @@ project-root/
 ├── CLAUDE.md                     # Agent working guide
 ├── .gitignore                    # Excludes results/ and data files
 ├── docs/
-│   ├── roadmap.md                # Roadmap, marks current Phase
 │   ├── design.md                 # Architecture design (modify only via /swf:update-design)
 │   ├── adr/                      # Architecture Decision Records (append-only)
 │   ├── experiments/

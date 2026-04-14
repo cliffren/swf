@@ -52,7 +52,7 @@ Valid section names:
    - `docs/adr/` — key design decisions
    - `docs/experiments/` — results and findings
    - `docs/experiments/collection-summary.md` — if exists, use as primary results source
-   - `docs/roadmap.md` — project scope
+   - `CLAUDE.md` — project scope and current phase
 
 2. **Generate outline** and save to `docs/paper/outline.md`:
    ```markdown

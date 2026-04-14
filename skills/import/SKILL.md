@@ -66,7 +66,6 @@ Bring an existing research project into the SWF workflow without disrupting curr
    | File | If exists | If missing |
    |------|-----------|------------|
    | CLAUDE.md | Keep as-is, suggest merging SWF conventions | Generate from template |
-   | docs/roadmap.md | Keep as-is | Generate, mark current phase |
    | docs/design.md | Keep as-is | Create placeholder, remind user to fill |
    | docs/adr/ | Keep as-is | Create directory |
    | docs/experiments/benchmark/ | Keep as-is | Create directory |

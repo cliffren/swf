@@ -1,6 +1,6 @@
 ---
 name: load
-description: "Load project context for a new session: read CLAUDE.md, roadmap, design.md, Linear issues, and recent git history to quickly get up to speed"
+description: "Load project context for a new session: read CLAUDE.md, design.md, Linear issues, and recent git history to quickly get up to speed"
 
 ---
 
@@ -11,8 +11,7 @@ Read key project files and Linear state to build a complete picture of where the
 ## Workflow
 
 1. **Read project files** (skip if file doesn't exist):
-   - `CLAUDE.md` — 工作方式和规范
-   - `docs/roadmap.md` — 当前阶段和进度
+   - `CLAUDE.md` — 工作方式、规范、当前阶段
    - `docs/design.md` — 架构设计
 
 2. **Check Linear:**
@@ -41,7 +40,7 @@ Read key project files and Linear state to build a complete picture of where the
    - <commit messages>
 
    ### 建议下一步
-   <based on roadmap and current state>
+   <based on Linear milestones and current state>
    ```
 
 ## Notes

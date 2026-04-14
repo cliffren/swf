@@ -17,13 +17,13 @@ Analyze current project state and create the next batch of issues in Linear.
 
 1. **Load project state:**
    - Read `docs/design.md` — what needs to be built
-   - Read `docs/roadmap.md` — current phase and what's been checked off
+   - Read `CLAUDE.md` — current phase
    - Read recent ADRs — any recent design decisions
    - Check Linear: completed issues (what's done), remaining Todo issues (what's planned)
    - Check git log: recent changes
 
 2. **Identify the gap:**
-   - What does the current phase require (from roadmap)?
+   - What does the current phase require (from Linear milestones + design.md)?
    - What's already done?
    - What's already in Todo/In Progress?
    - What's missing?
