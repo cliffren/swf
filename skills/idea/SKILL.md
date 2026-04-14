@@ -104,7 +104,7 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    - Check if ⑤ 框架图 is still in Backlog
    - Ask: "核心评估已完成。要现在画框架图吗？还是直接进入 promote？"
      - If user wants to draw → move ⑤ to Todo, start working on it. After ⑤ Done, mark main issue Done and prompt promote
-     - If user wants to skip → mark ⑤ Canceled, mark main issue Done, prompt: "要用 `/swf:promote` 建独立项目吗？"
+     - If user wants to skip → keep ⑤ in Backlog, mark main issue Done, prompt: "要用 `/swf:promote` 建独立项目吗？"
    - If ⑤ was already Done (user did it earlier) → mark main issue Done, prompt promote
 
 ## Literature Review Template
