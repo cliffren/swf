@@ -35,7 +35,7 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
    | Sub-issue | Labels | Output template |
    |-----------|--------|----------------|
    | 文献调研：领域进展、找到 gap | `writing`, `agent:claude` | see below |
-   | 评估意义/创新性/可行性 | `writing`, `agent:claude` | merge key insights into literature-review.md |
+   | 评估意义/创新性/可行性 | `writing`, `agent:claude` | copy key insights into literature-review.md, keep feasibility.md as-is |
    | 技术选型 | `writing`, `agent:claude` |
    | 撰写 design.md 初稿 | `writing`, `agent:claude` |
    | 画框架图初版 | `figures`, `agent:claude` |
