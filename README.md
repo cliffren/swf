@@ -25,7 +25,7 @@ gh auth status
 /reload-plugins
 ```
 
-Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, all `/swf:*` commands are globally available.
+Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, run `/swf:init-linear` to set up your Linear workspace.
 
 ## Core Philosophy
 
@@ -89,7 +89,7 @@ Each project has 8 phases, mapped to Linear Project Milestones:
 
 **Phases are not strictly linear.** You can draft Methods as early as late Phase 1, and create figures during experiment downtime. `/swf:plan` proactively suggests tasks that can be started ahead of schedule.
 
-## All Skills (15)
+## All Skills (16)
 
 Skills are divided into two scopes:
 
@@ -100,6 +100,7 @@ Skills are divided into two scopes:
 
 | Command | Description |
 |---------|-------------|
+| `/swf:init-linear` | One-time Linear workspace setup: labels, Ideas project, Archive project |
 | `/swf:idea <name>` | Log a new idea into the Ideas project with evaluation sub-issues |
 | `/swf:promote` | Graduate an evaluated idea into an independent Project + repo |
 | `/swf:import` | Import an existing project into the SWF workflow |

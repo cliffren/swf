@@ -25,7 +25,7 @@ gh auth status
 /reload-plugins
 ```
 
-第 1-3 步在 Claude Code 提示符中输入（不是 bash）。安装后所有 `/swf:*` 命令全局可用。
+第 1-3 步在 Claude Code 提示符中输入（不是 bash）。安装后运行 `/swf:init-linear` 初始化 Linear 工作区。
 
 ## 核心理念
 
@@ -89,7 +89,7 @@ gh auth status
 
 **Phase 不是严格线性的。** Methods 初稿在 Phase 1 末就能写，等实验的间隙可以做图。`/swf:plan` 会主动建议可提前做的任务。
 
-## 全部 Skills（15 个）
+## 全部 Skills（16 个）
 
 Skills 分为两个作用域：
 
@@ -100,6 +100,7 @@ Skills 分为两个作用域：
 
 | 命令 | 说明 |
 |------|------|
+| `/swf:init-linear` | 一次性 Linear 工作区初始化：labels、Ideas 项目、Archive 项目 |
 | `/swf:idea <name>` | 新想法进 Ideas 漏斗，建评估 sub-issues |
 | `/swf:promote` | 交互式选择想法，建独立 Project + repo |
 | `/swf:import` | 导入已有项目，分析 repo 推断 Phase，补齐文档 |
