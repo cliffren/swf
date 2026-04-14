@@ -1,7 +1,7 @@
 ---
 name: promote
 description: "Graduate an evaluated idea into a full project: create Linear Project with Phase milestones, GitHub repo, and standard directory structure"
-disable-model-invocation: true
+
 ---
 
 # Promote Idea to Project

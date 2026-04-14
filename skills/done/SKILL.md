@@ -2,7 +2,7 @@
 name: done
 description: "Complete the current task: write a summary comment on the Linear issue, mark it Done, and suggest next steps"
 argument-hint: "[issue-id]"
-disable-model-invocation: true
+
 ---
 
 # Finish Current Task

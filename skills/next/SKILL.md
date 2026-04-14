@@ -2,7 +2,7 @@
 name: next
 description: "Pick up the next Todo issue from Linear, mark it In Progress, and start working on it"
 argument-hint: "[label]"
-disable-model-invocation: true
+
 ---
 
 # Pick Up Next Task

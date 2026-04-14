@@ -2,7 +2,7 @@
 name: adr
 description: "Write a new Architecture Decision Record (ADR) with auto-numbering"
 argument-hint: <title>
-disable-model-invocation: true
+
 ---
 
 # Write ADR

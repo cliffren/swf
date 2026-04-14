@@ -2,7 +2,7 @@
 name: daily
 description: "Show today's tasks across all projects, optionally filtered by type label (dev, writing, figures, experiment, admin)"
 argument-hint: "[type-label]"
-disable-model-invocation: true
+
 ---
 
 # Daily Task View

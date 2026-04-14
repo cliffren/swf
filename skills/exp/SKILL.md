@@ -2,7 +2,7 @@
 name: exp
 description: "Manage experiments: create records, log results, compare runs, and collect data for paper writing"
 argument-hint: "[new|log|compare|collect]"
-disable-model-invocation: true
+
 ---
 
 # Experiment Management

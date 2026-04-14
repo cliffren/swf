@@ -2,7 +2,7 @@
 name: fig
 description: "Create and manage publication figures: framework diagrams via draw.io/Figma MCP, data plots via code, and figure assembly"
 argument-hint: "[framework|plot|assemble|list]"
-disable-model-invocation: true
+
 ---
 
 # Figure Management

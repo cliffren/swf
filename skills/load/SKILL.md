@@ -1,7 +1,7 @@
 ---
 name: load
 description: "Load project context for a new session: read CLAUDE.md, roadmap, design.md, Linear issues, and recent git history to quickly get up to speed"
-disable-model-invocation: true
+
 ---
 
 # Load Project Context

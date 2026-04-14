@@ -1,7 +1,7 @@
 ---
 name: import
 description: "Import an existing research project into the SWF workflow: create Linear Project with milestones, add standard docs to existing repo"
-disable-model-invocation: true
+
 ---
 
 # Import Existing Project

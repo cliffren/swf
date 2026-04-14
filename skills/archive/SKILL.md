@@ -2,7 +2,7 @@
 name: archive
 description: "Clean up Done issues to stay under Linear's 250 issue limit. Show quota usage."
 argument-hint: "[project]"
-disable-model-invocation: true
+
 ---
 
 # Archive Done Issues

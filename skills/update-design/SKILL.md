@@ -1,7 +1,7 @@
 ---
 name: update-design
 description: "Review recent ADRs, experiments, and code changes, then update docs/design.md accordingly"
-disable-model-invocation: true
+
 ---
 
 # Update Design Document

@@ -2,7 +2,7 @@
 name: paper
 description: "Generate paper outline from project docs, or draft a specific section"
 argument-hint: "[section]"
-disable-model-invocation: true
+
 ---
 
 # Paper Writing Assistant

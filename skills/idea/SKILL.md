@@ -2,7 +2,7 @@
 name: idea
 description: "Log a new research idea into the Ideas project with standard evaluation sub-issues"
 argument-hint: <idea-name>
-disable-model-invocation: true
+
 ---
 
 # New Research Idea
