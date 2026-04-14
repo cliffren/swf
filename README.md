@@ -115,7 +115,7 @@ Skills are divided into two scopes:
 | `/swf:import` | Import an existing project into the SWF workflow |
 | `/swf:dashboard [project]` | Cross-project dashboard, or single project detail |
 | `/swf:daily [type-label]` | Today's tasks across all projects, filterable by label |
-| `/swf:archive [project]` | Clean up Done issues, show quota usage |
+| `/swf:archive [project]` | Show quota usage (Linear free plan: 250 active issues). Exports Done issues to Archive project Documents, then guides you to manually delete originals in Linear web UI to free quota |
 
 ### Project Commands (run from inside a project repo)
 

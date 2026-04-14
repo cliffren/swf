@@ -115,7 +115,7 @@ Skills 分为两个作用域：
 | `/swf:import` | 导入已有项目，分析 repo 推断 Phase，补齐文档 |
 | `/swf:dashboard [project]` | 跨项目仪表盘，或单项目详情 |
 | `/swf:daily [type-label]` | 跨项目今日待办，可按 label 过滤 |
-| `/swf:archive [project]` | 清理 Done issues，显示 250 额度使用情况 |
+| `/swf:archive [project]` | 显示额度使用情况（Linear 免费版限 250 个活跃 issue）。将 Done issues 导出为 Archive 项目的 Documents 备份，然后引导你在 Linear 网页上手动删除原 issues 释放额度 |
 
 ### 项目命令（在项目 repo 目录内运行）
 
