@@ -39,7 +39,16 @@ gh auth status
 
 **SWF 不做什么：** 不管"怎么写代码"——具体开发流程交给 Superpowers 等开发类插件。
 
-**两者如何配合：**
+**跨 session 零交接：**
+
+```
+Session A: 做任务 → /swf:done → 摘要写进 Linear，代码 commit 到 git → 关掉走人
+Session B: /swf:load → 从 Linear + git 恢复全部上下文 → 直接继续
+```
+
+不需要手动交接、不需要写笔记、不需要想"上次做到哪了"。状态全在 Linear 和 git 里，不依赖 session 记忆。
+
+**SWF 与 Superpowers 的配合：**
 
 ```
 /swf:next       → 从 Linear 领一个任务

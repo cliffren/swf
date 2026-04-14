@@ -39,7 +39,16 @@ Idea → Evaluate → Establish → Develop → Validate → Deep Analysis → F
 
 **What SWF doesn't do:** Doesn't manage *how to write code* — that's handled by development plugins like Superpowers.
 
-**How they work together:**
+**Zero-handoff between sessions:**
+
+```
+Session A: work on task → /swf:done → summary in Linear, code in git → close
+Session B: /swf:load → full context restored from Linear + git → continue
+```
+
+No manual notes, no handoff documents. State lives in Linear and git, not in session memory.
+
+**How SWF and Superpowers work together:**
 
 ```
 /swf:next       → Pick up a task from Linear
