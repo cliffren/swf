@@ -227,7 +227,7 @@ Agent 逐个领取任务、执行、在 Linear issue 上写完成摘要评论、
 
 **全自动（理论可行，不推荐）：**
 ```bash
-/loop "检查当前项目：有 Todo issue 就用 /swf:next 领一个做，没有就用 /swf:plan-next 规划下一批，然后继续"
+/loop "检查当前项目：有 Todo issue 就用 /swf:next 领一个或一批来做，没有就用 /swf:plan-next 规划下一批，然后继续"
 ```
 
 技术上可行，但你会失去对设计决策、Phase 转换、实验结果判断的控制。最佳实践是：**人控制方向和节奏，agent 负责批量执行。**
