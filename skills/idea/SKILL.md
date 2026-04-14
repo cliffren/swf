@@ -100,7 +100,8 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
      - If no → archive the idea, mark remaining sub-issues Canceled
      - If yes → continue to ③
 
-6. **After all sub-issues Done:**
+6. **After ①~④ all Done:**
+   - Mark the main idea issue as Done (⑤ 框架图 is Backlog, does not block completion)
    - Prompt: "评估全部完成，要用 `/swf:promote` 建独立项目吗？"
 
 ## Literature Review Template
