@@ -210,6 +210,28 @@ Experiment records go into git (`docs/experiments/`), configs go into git (`conf
 
 ## Daily Usage
 
+### Agent Automation Patterns
+
+**Batch execution (recommended):**
+```bash
+# You plan and review, agent executes
+/swf:plan-next my-project          # Plan a batch of issues
+# Review the plan, confirm
+"Do all of these tasks"             # Agent runs through them sequentially
+# Come back later, review results
+```
+
+Agent picks up each issue, executes it, writes a completion summary comment on Linear, and moves to the next. You can leave it running overnight — every task will have a comment recording what was done.
+
+**Why this works:** Each issue has clear acceptance criteria and references to design.md, so the agent can work independently without asking clarifying questions.
+
+**Full automation (possible but not recommended):**
+```bash
+/loop /swf:next                    # Theoretically runs forever
+```
+
+This can work, but you lose control over design decisions, phase transitions, and experiment interpretation. The sweet spot is: **human controls direction and pace, agent handles batch execution.**
+
 ### Starting Your Day (global — from any directory)
 
 ```bash
