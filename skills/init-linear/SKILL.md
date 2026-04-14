@@ -56,7 +56,7 @@ One-time setup to prepare Linear workspace for the SWF workflow.
    ```
    请在 Linear 网页上手动配置以下设置：
 
-   Team Settings:
+   Settings → Team Settings → Workflows & automations:
    - Auto-close parent issue: 开启（子 issue 全完成时自动关闭父 issue）
    - Auto-archive closed items after: 1 month（最短选项）
 
