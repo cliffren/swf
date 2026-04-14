@@ -32,9 +32,9 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
 
 3. **Create evaluation sub-issues** under the main issue:
 
-   | Sub-issue | Labels |
-   |-----------|--------|
-   | 文献调研：领域进展、找到 gap | `writing`, `agent:claude` |
+   | Sub-issue | Labels | Output template |
+   |-----------|--------|----------------|
+   | 文献调研：领域进展、找到 gap | `writing`, `agent:claude` | see below |
    | 评估意义/创新性/可行性 | `writing`, `agent:claude` |
    | 技术选型 | `writing`, `agent:claude` |
    | 撰写 design.md 初稿 | `writing`, `agent:claude` |
@@ -102,6 +102,41 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
 
 6. **After all sub-issues Done:**
    - Prompt: "评估全部完成，要用 `/swf:promote` 建独立项目吗？"
+
+## Literature Review Template
+
+`literature-review.md` should follow this structure:
+
+```markdown
+# 文献调研：<idea name>
+
+## 领域现状
+<2-3 段概述当前领域的主要方法和进展>
+
+## 关键文献
+
+1. Smith et al. (2024) "Title" *Journal*. DOI: 10.xxxx/xxx
+   - 做了什么：...
+   - 和我们的关系：...
+
+2. Zhang et al. (2023) "Title" *Journal*. DOI: 10.xxxx/xxx
+   - 做了什么：...
+   - 和我们的关系：...
+
+(list 10-20 key papers)
+
+## Gap 分析
+<现有方法的不足、未解决的问题>
+
+## 我们的机会
+<这个想法如何填补 gap，和已有工作的区别>
+```
+
+Notes:
+- Use `(Smith et al., 2024)` or `[1]` inline citations in the text
+- Always include DOI for each paper — makes it easy to import into EndNote later
+- This is for evaluation, not publication — informal style is fine
+- The citation list here feeds directly into Introduction writing in Phase 5
 
 ## References
 
