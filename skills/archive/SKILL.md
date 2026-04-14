@@ -41,31 +41,20 @@ Export completed issues to the Archive project as Documents, then guide user to 
      - Use `list_documents` with `project: "Archive"` and search for current month title
    - If exists: use `update_document` to append new entries
    - If not: use `create_document` with `project: "Archive"`, titled `归档 YYYY-MM`
-   - Content format, grouped by project, each entry with date:
+   - Content format: one line per issue, grouped by project and phase, minimal info only:
      ```markdown
      # 归档 2026-04
 
-     ## spaharmony
-
-     ### TAO-11: 发布 v1：整理文档 + 发布 PyPI
-     - **Status:** Done
-     - **Completed:** 2026-04-14
-     - **Labels:** dev, manual
-     - **Milestone:** Phase 1 — 数据准备与开发
-     - **Description:**
-       整理现有 v1 代码...
-     - **Comments:**
-       (include all comments if any)
-
-     ---
-
-     ### TAO-XX: ...
+     ## spaharmony — Phase 1
+     - [Done] TAO-11: 发布 v1：整理文档 + 发布 PyPI (2026-04-14)
+     - [Done] TAO-14: v2: Harmony 主循环迁移至 CuPy (2026-04-18)
 
      ## Ideas
-
-     ### TAO-5: Spatial Harmony 评估
-     - ...
+     - [Done] TAO-5: Spatial Harmony 评估 (2026-04-14)
+     - [Canceled] TAO-99: 某个放弃的想法 (2026-04-10)
      ```
+   - Only record: status, issue ID, title, completion date
+   - Do NOT fetch descriptions, comments, or labels — saves token and these info live in git history
 
 4. **Guide user to delete originals:**
    ```
@@ -88,6 +77,6 @@ Export completed issues to the Archive project as Documents, then guide user to 
 
 - Never delete issues via MCP (Linear MCP doesn't support it anyway)
 - Always export BEFORE telling user to delete
-- Include full issue content in the Document: title, description, labels, milestone, comments, completion date
+- Only record status, issue ID, title, and completion date — descriptions, comments, labels live in git history
 - One Document per month, append if archiving multiple times in the same month
 - The Archive project itself should never have issues, only Documents
