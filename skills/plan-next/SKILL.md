@@ -80,3 +80,10 @@ Analyze current project state and create the next batch of issues in Linear.
 - Never create issues without user confirmation
 - If the current phase looks complete, suggest moving to the next phase
 - Suggest breaking large tasks into sub-issues if they exceed 2 days
+
+## Quota Check
+
+Before creating issues, check the current issue count (list all non-archived issues).
+- If count + new issues > 200: warn "当前 X/250 issues，建议先完成一些任务等待自动归档"
+- If count + new issues > 240: block and suggest reducing scope or waiting for auto-archive
+- Only plan the current Phase's issues, don't over-plan future Phases unless user asks
