@@ -66,6 +66,15 @@ Analyze current project state and create the next batch of issues in Linear.
    - Create each issue in Linear with correct project, milestone, labels
    - Report created issues with IDs and links
 
+## Status Usage
+
+- **Todo** — confirmed work, will be done. All planned issues default to Todo.
+- **Backlog** — tentative, not sure if needed. Use only when the issue is speculative:
+  - "可能需要 ablation study，看 reviewer 要求再定"
+  - "如果性能不够再考虑优化"
+- **In Progress** — currently being worked on (set by `/swf:next`)
+- Do NOT use Backlog as "queued but not started yet" — that's what Todo is for.
+
 ## Notes
 
 - Never create issues without user confirmation

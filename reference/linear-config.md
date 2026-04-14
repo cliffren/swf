@@ -25,6 +25,12 @@
 ## Status Flow
 Backlog → Todo → In Progress → Done / Canceled
 
+- **Backlog**: 想法池/待定 — 不确定要不要做的事。不是"排队等执行"
+- **Todo**: 确定要做 — 已进入计划，等待执行
+- **In Progress**: 正在做
+- **Done**: 完成
+- **Canceled**: 取消/否决
+
 ## Issue Conventions
 - 一个 issue = 半天到两天的工作量
 - 细节用 sub-issue 或 checklist

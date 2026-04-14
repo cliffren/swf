@@ -17,7 +17,7 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
 
 1. **Create the main issue** in the Ideas project:
    - Title: `$ARGUMENTS`
-   - Status: Backlog
+   - Status: Todo
    - Ask the user for a 1-2 sentence description of the idea
 
 2. **Discuss and clarify the idea** with the user before creating sub-issues:
@@ -62,8 +62,8 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
      ① 文献调研 → ② 评估可行性 → ③ 技术选型 → ④ design.md 初稿 → ⑤ 框架图
      ```
    - Note: idea discussion (step 2) happens BEFORE sub-issues are created, so it's not a sub-issue
-   - Set ① to Todo, rest to Backlog
-   - Use Linear's blocking relations: ② blocked by ①, ③ blocked by ②, etc.
+   - All sub-issues set to Todo (they are all confirmed work, not tentative)
+   - Use Linear's blocking relations to control execution order: ② blocked by ①, ③ blocked by ②, etc.
 
 4. **Guide next steps:**
    - Show the user what was created with links
@@ -91,7 +91,7 @@ Create a new research idea in the Linear Ideas project and set up standard evalu
      4. Only mark Done after user explicitly confirms: "可以" / "没问题" / "通过"
      5. Update the local file with the confirmed version
      6. Post brief summary to Linear issue comment
-     7. Move the next sub-issue from Backlog to Todo
+     7. Unblock the next sub-issue
      8. Ask: "下一步是 [next sub-issue]，要继续吗？"
 
    - After ② (可行性评估), add a gate check:
