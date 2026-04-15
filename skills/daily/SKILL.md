@@ -16,7 +16,7 @@ Show what to work on today, across all projects.
 ## Workflow
 
 1. **Query Linear:**
-   - Fetch all Todo and In Progress issues assigned to "me"
+   - Fetch all Todo and In Progress issues across all projects (not filtered by assignee)
    - If a type label is provided, filter by it
    - Group by project
 
