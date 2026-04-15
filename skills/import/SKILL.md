@@ -97,7 +97,7 @@ Bring an existing research project into the SWF workflow without disrupting curr
      - Existing docs, README — project description, design decisions
      - Existing results, figures — completed experiments
      - Code structure — what's been built
-   - Write a summary Document to the project itself:
+   - Write a summary as a Linear Document to the Linear project itself (using `create_document` with `project` parameter):
      - Title: `导入前工作总结`
      - Content:
        ```markdown
