@@ -91,7 +91,42 @@ Bring an existing research project into the SWF workflow without disrupting curr
      - Assign to current phase milestone
    - If user says "暂时不建"，skip this step
 
-9. **Commit and report:**
+9. **Summarize prior work to Archive:**
+   - Analyze the repo's history and existing artifacts to understand what has been done before import:
+     - `git log` — development history, key milestones
+     - Existing docs, README — project description, design decisions
+     - Existing results, figures — completed experiments
+     - Code structure — what's been built
+   - Write a summary Document to the Archive project:
+     - Title: `<project-name> — 导入前工作总结`
+     - Content:
+       ```markdown
+       # <project-name> — 导入前工作总结
+
+       **导入日期:** <date>
+       **导入时 Phase:** <N>
+       **Repo:** <url>
+
+       ## 已完成的工作
+       - <key accomplishment 1>
+       - <key accomplishment 2>
+       - ...
+
+       ## 关键设计决策
+       - <decision 1 — inferred from code/docs>
+       - ...
+
+       ## 已有成果
+       - 代码：<what's been built>
+       - 数据/实验：<what results exist>
+       - 文档：<what docs exist>
+
+       ## 备注
+       <any other context worth preserving>
+       ```
+   - Present summary to user for review before saving
+
+10. **Commit and report:**
    - Commit new/modified files: `docs: integrate SWF workflow`
    - Show summary:
      ```
