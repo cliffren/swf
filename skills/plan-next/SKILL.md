@@ -61,7 +61,10 @@ Analyze current project state and create the next batch of issues in Linear.
    4. [writing, agent:claude] Methods 核心算法描述（Phase 5）
    5. [figures, agent:claude] 已有 benchmark 结果可视化（Phase 4）
 
-   确认创建吗？可以修改后再创建。
+   确认创建吗？你可以：
+   - 合并：把几个相关的 issue 合成一个（细节放 checklist）
+   - 拆分：把太大的 issue 拆成多个
+   - 修改：调整标题、描述、labels
    ```
 
 6. **Create issues** after user confirms:
