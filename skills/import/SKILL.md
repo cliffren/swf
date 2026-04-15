@@ -97,8 +97,8 @@ Bring an existing research project into the SWF workflow without disrupting curr
      - Existing docs, README — project description, design decisions
      - Existing results, figures — completed experiments
      - Code structure — what's been built
-   - Write a summary Document to the Archive project:
-     - Title: `<project-name> — 导入前工作总结`
+   - Write a summary Document to the project itself:
+     - Title: `导入前工作总结`
      - Content:
        ```markdown
        # <project-name> — 导入前工作总结
