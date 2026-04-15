@@ -1,0 +1,14 @@
+{
+  "name": "swf",
+  "displayName": "SWF — Scientific Workflow",
+  "description": "Multi-project research lifecycle management with Linear integration",
+  "version": "0.1.0",
+  "author": {
+    "name": "cliffren"
+  },
+  "homepage": "https://github.com/cliffren/swf",
+  "repository": "https://github.com/cliffren/swf",
+  "license": "MIT",
+  "skills": "./skills/",
+  "agents": "./agents/"
+}

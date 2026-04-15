@@ -27,6 +27,11 @@ gh auth status
 
 第 1-3 步在 Claude Code 提示符中输入（不是 bash）。安装后运行 `/swf:init-linear` 初始化 Linear 工作区。
 
+**其他编码工具：**
+
+- **Codex：** 参见 [.codex/INSTALL.md](.codex/INSTALL.md) — clone 后 symlink 到 `~/.agents/skills/`
+- **Cursor：** 将 `.cursor-plugin/` 和 `skills/` 复制到 Cursor 插件目录
+
 ## 核心理念
 
 **一个科研项目的生命周期：**

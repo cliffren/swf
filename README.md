@@ -27,6 +27,11 @@ gh auth status
 
 Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, run `/swf:init-linear` to set up your Linear workspace.
 
+**Other coding agents:**
+
+- **Codex:** See [.codex/INSTALL.md](.codex/INSTALL.md) — clone and symlink to `~/.agents/skills/`
+- **Cursor:** Copy `.cursor-plugin/` and `skills/` into your Cursor plugin directory
+
 ## Core Philosophy
 
 **A research project's lifecycle:**
