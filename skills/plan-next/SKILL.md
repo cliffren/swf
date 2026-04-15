@@ -37,7 +37,9 @@ Analyze current project state and create the next batch of issues in Linear.
    - Mark these issues with their actual Phase milestone, not the current one
 
 3. **Draft new issues:**
-   - Each issue = half-day to two-day effort
+   - Default issue granularity: half-day to two-day effort (adjustable — user can ask for coarser or finer granularity)
+   - Smaller tasks can be combined into one issue with a checklist in the description
+   - Rule of thumb: if you'd want to see its status independently on the board, make it an issue; otherwise, make it a checklist item
    - Include: title, description with clear acceptance criteria, labels (type + executor), milestone
    - For dev tasks, reference the relevant section of design.md
    - For experiment tasks, specify inputs/outputs/success criteria
