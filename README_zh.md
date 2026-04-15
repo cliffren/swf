@@ -31,6 +31,7 @@ gh auth status
 
 - **Codex：** 参见 [.codex/INSTALL.md](.codex/INSTALL.md) — clone 后 symlink 到 `~/.agents/skills/`
 - **Cursor：** 将 `.cursor-plugin/` 和 `skills/` 复制到 Cursor 插件目录
+- **OpenCode：** 参见 [.opencode/INSTALL.md](.opencode/INSTALL.md) — 添加到 `opencode.json` 的 plugin 数组
 
 ## 核心理念
 

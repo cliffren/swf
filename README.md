@@ -31,6 +31,7 @@ Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, 
 
 - **Codex:** See [.codex/INSTALL.md](.codex/INSTALL.md) — clone and symlink to `~/.agents/skills/`
 - **Cursor:** Copy `.cursor-plugin/` and `skills/` into your Cursor plugin directory
+- **OpenCode:** See [.opencode/INSTALL.md](.opencode/INSTALL.md) — add to `opencode.json` plugin array
 
 ## Core Philosophy
 
