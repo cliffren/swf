@@ -31,8 +31,11 @@ One-time setup to prepare Linear workspace for the SWF workflow.
    └── manual        #EB5757  需要手动操作
    ```
 
-   - Create `type` label group, then sub-labels
-   - Create `executor` label group, then sub-labels
+   - First create parent groups with `create_issue_label` using `isGroup: true`:
+     - `type` (isGroup: true)
+     - `executor` (isGroup: true)
+   - Then create sub-labels with `parent` parameter pointing to the group name:
+     - e.g., `create_issue_label(name: "dev", color: "#4EA7FC", description: "编码开发", parent: "type")`
    - Skip any that already exist
 
 3. **Create Ideas project:**
