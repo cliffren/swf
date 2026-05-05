@@ -12,6 +12,7 @@
 
 ## 工作方式
 - 任务来源：Linear 项目 {{PROJECT_NAME}}，处理状态为 Todo、对应 agent 标签的 issue
+- **开始做任何 issue 前，必须先在 Linear 上将其标为 In Progress**（无论是通过 `/swf:next` 还是用户直接指定）
 - 开发流程：使用 Superpowers 工作流
 - 完成后：在 issue 评论记录改动摘要，标为 Done
 - 如果发现需要新任务，在 Linear 创建新 issue 而非直接做
