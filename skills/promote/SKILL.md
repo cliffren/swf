@@ -18,8 +18,8 @@ Graduate an idea from the Ideas project into a full independent project.
 
 2. **Confirm project details:**
    - Ask for: 项目简称（用于 repo 名和 Linear Project 名）, one-line description, tech stack
-   - Project path defaults to `~/Projects/<project-name>`, ask user to confirm or change
-   - Show a confirmation summary before proceeding
+   - Ask project path: "项目放在哪？默认 ~/Projects/<project-name>"，user confirms or changes
+   - Show a confirmation summary of all details before proceeding — do NOT create anything until user confirms
 
 3. **Create Linear Project:**
    - Name: the project name
@@ -73,7 +73,20 @@ Graduate an idea from the Ideas project into a full independent project.
    - Add a comment: "Promoted to project: <project-name>. Linear: <project-url>, GitHub: <repo-url>"
    - Mark as Done
 
-8. **Report** — show the user all created resources with links
+8. **Report and guide next steps:**
+   ```
+   ## 项目创建完成：<project-name>
+
+   Linear Project: <url>
+   Repo: <GitHub URL or local path>
+   CLAUDE.md: ✓
+   design.md: ✓ (从 Ideas 复制)
+
+   下一步：
+   1. cd <project-path>
+   2. /swf:load               加载项目上下文
+   3. /swf:plan-next <name>   规划 Phase 1 的第一批 issues
+   ```
 
 ## Safety
 
