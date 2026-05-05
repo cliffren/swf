@@ -35,7 +35,7 @@ gh auth status
 /swf:idea "我的研究想法"              # 记录想法，和 Claude 讨论梳理
                                     # 完成评估子任务（文献、可行性、技术选型、design）
 /swf:promote                       # 毕业为独立项目（Linear + repo）
-cd ~/Projects/my-project
+cd <project-path>
 /swf:load                           # 加载项目上下文（尤其是新 session 时）
 /swf:plan-next my-project           # 规划第一批 issues
 ```
@@ -137,7 +137,7 @@ Session B: /swf:load → 从 Linear + git 恢复全部上下文 → 直接继续
 Skills 分为两个作用域：
 
 - **全局命令** — 在任何目录下运行，通过 Linear 跨项目操作
-- **项目命令** — 在项目 repo 目录内运行（`cd ~/Projects/my-project`），操作本地文件和该项目的 Linear issues
+- **项目命令** — 在项目 repo 目录内运行（`cd <project-path>`），操作本地文件和该项目的 Linear issues
 
 ### 全局命令（在任何目录下运行）
 
@@ -279,7 +279,7 @@ Agent 逐个领取任务、执行、在 Linear issue 上写完成摘要评论、
 ### 进入某个项目（项目内 — 先 cd 到 repo）
 
 ```bash
-cd ~/Projects/my-project
+cd <project-path>
 /swf:context              # 项目到哪了、正在做什么
 /swf:next dev             # 领一个 dev 任务
 # ...用 superpowers 开发...

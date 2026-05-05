@@ -35,7 +35,7 @@ Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, 
 /swf:idea "my research idea"       # Log the idea, discuss and clarify with Claude
                                     # Complete evaluation sub-issues (literature, feasibility, tech, design)
 /swf:promote                       # Graduate to independent project (Linear + repo)
-cd ~/Projects/my-project
+cd <project-path>
 /swf:load                           # Load project context (especially if new session)
 /swf:plan-next my-project           # Plan the first batch of issues
 ```
@@ -137,7 +137,7 @@ Each project has 8 phases, mapped to Linear Project Milestones:
 Skills are divided into two scopes:
 
 - **Global** — run from anywhere, operate across projects via Linear
-- **Project** — run from inside a project repo (`cd ~/Projects/my-project`), operate on local files + that project's Linear issues
+- **Project** — run from inside a project repo (`cd <project-path>`), operate on local files + that project's Linear issues
 
 ### Global Commands (run from anywhere)
 
@@ -279,7 +279,7 @@ This can work, but you lose control over design decisions, phase transitions, an
 ### Working on a Project (project — cd into repo first)
 
 ```bash
-cd ~/Projects/my-project
+cd <project-path>
 /swf:context              # Where is the project? What's in progress?
 /swf:next dev             # Pick up a dev task
 # ...use Superpowers for development...
