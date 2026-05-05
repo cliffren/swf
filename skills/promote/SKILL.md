@@ -23,11 +23,11 @@ Graduate an idea from the Ideas project into a full independent project.
 3. **Create Linear Project:**
    - Name: the project name
    - Team: Tao's Linear
-   - Description 包含（创建 repo 后回填 URL）:
+   - Description 包含（创建 repo 后回填）:
      ```
      <one-line description>
 
-     **GitHub:** https://github.com/<user>/<project-name>
+     **Repo:** <GitHub URL if remote, or local path if local-only>
      **Tech Stack:** <tech stack>
      **Created:** <date>
      ```
@@ -42,13 +42,22 @@ Graduate an idea from the Ideas project into a full independent project.
    - Phase 7 — 投稿后
    - Phase 8 — 发表
 
-5. **Create GitHub repo:**
-   ```bash
-   gh repo create <project-name> --private --description "<one-line description>"
-   ```
+5. **Create repo:**
+   - Ask user: "要在 GitHub 上创建远程仓库，还是只在本地用 git 追踪？"
+   - **GitHub 远程仓库：**
+     ```bash
+     gh repo create <project-name> --private --description "<one-line description>"
+     ```
+     Clone the repo, then proceed to step 6
+   - **本地 git 仓库：**
+     ```bash
+     mkdir ~/Projects/<project-name>
+     cd ~/Projects/<project-name>
+     git init
+     ```
+     Proceed to step 6 (skip push at the end)
 
 6. **Initialize repo structure** (read `${CLAUDE_SKILL_DIR}/../reference/repo-structure.md`):
-   - Clone the repo
    - Create standard directory structure
    - Generate CLAUDE.md from template (`${CLAUDE_SKILL_DIR}/../reference/claude-md-template.md`)
    - In CLAUDE.md, set "当前阶段：Phase 1"
@@ -57,7 +66,7 @@ Graduate an idea from the Ideas project into a full independent project.
      - `framework.svg` → `docs/paper/figures/fig1-framework.svg` (if exists)
      - `literature-review.md` → `docs/literature-review.md` (if exists)
    - Keep the original Ideas workspace intact for reference
-   - Commit and push
+   - Commit (and push if remote repo)
 
 7. **Archive the Ideas issue:**
    - Add a comment: "Promoted to project: <project-name>. Linear: <project-url>, GitHub: <repo-url>"
