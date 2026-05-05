@@ -36,6 +36,7 @@ gh auth status
                                     # 完成评估子任务（文献、可行性、技术选型、design）
 /swf:promote                       # 毕业为独立项目（Linear + repo）
 cd ~/Projects/my-project
+/swf:load                           # 加载项目上下文（尤其是新 session 时）
 /swf:plan-next my-project           # 规划第一批 issues
 ```
 

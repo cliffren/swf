@@ -36,6 +36,7 @@ Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, 
                                     # Complete evaluation sub-issues (literature, feasibility, tech, design)
 /swf:promote                       # Graduate to independent project (Linear + repo)
 cd ~/Projects/my-project
+/swf:load                           # Load project context (especially if new session)
 /swf:plan-next my-project           # Plan the first batch of issues
 ```
 
