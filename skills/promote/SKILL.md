@@ -18,6 +18,7 @@ Graduate an idea from the Ideas project into a full independent project.
 
 2. **Confirm project details:**
    - Ask for: 项目简称（用于 repo 名和 Linear Project 名）, one-line description, tech stack
+   - Project path defaults to `~/Projects/<project-name>`, ask user to confirm or change
    - Show a confirmation summary before proceeding
 
 3. **Create Linear Project:**
