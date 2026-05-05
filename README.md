@@ -27,6 +27,33 @@ gh auth status
 
 Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, run `/swf:init-linear` to set up your Linear workspace.
 
+## Quick Start
+
+**Start a new project from scratch:**
+```
+/swf:init-linear                    # One-time: set up Linear workspace (labels, Ideas, Archive)
+/swf:idea "my research idea"       # Log the idea, discuss and clarify with Claude
+                                    # Complete evaluation sub-issues (literature, feasibility, tech, design)
+/swf:promote                       # Graduate to independent project (Linear + repo)
+cd ~/Projects/my-project
+/swf:plan-next my-project           # Plan the first batch of issues
+```
+
+**Import an existing project:**
+```
+cd ~/Projects/existing-project
+/swf:import                         # Analyze repo, infer phase, create Linear project, scaffold docs
+/swf:plan-next existing-project     # Plan issues for current phase
+```
+
+**Then the daily loop:**
+```
+/swf:load                           # Start of session: load context
+/swf:next                           # Pick up a task
+# ... work ...
+/swf:done                           # Finish task, record summary
+```
+
 **Other coding agents:**
 
 - **Codex:** See [.codex/INSTALL.md](.codex/INSTALL.md) — clone and symlink to `~/.agents/skills/`

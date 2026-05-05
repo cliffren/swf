@@ -27,6 +27,33 @@ gh auth status
 
 第 1-3 步在 Claude Code 提示符中输入（不是 bash）。安装后运行 `/swf:init-linear` 初始化 Linear 工作区。
 
+## 快速开始
+
+**从零开始一个新项目：**
+```
+/swf:init-linear                    # 一次性：初始化 Linear 工作区（labels、Ideas、Archive）
+/swf:idea "我的研究想法"              # 记录想法，和 Claude 讨论梳理
+                                    # 完成评估子任务（文献、可行性、技术选型、design）
+/swf:promote                       # 毕业为独立项目（Linear + repo）
+cd ~/Projects/my-project
+/swf:plan-next my-project           # 规划第一批 issues
+```
+
+**导入已有项目：**
+```
+cd ~/Projects/existing-project
+/swf:import                         # 分析 repo，推断 Phase，建 Linear 项目，补齐文档
+/swf:plan-next existing-project     # 规划当前阶段的 issues
+```
+
+**然后就是日常循环：**
+```
+/swf:load                           # 新 session 开始：加载上下文
+/swf:next                           # 领一个任务
+# ... 工作 ...
+/swf:done                           # 完成，记录摘要
+```
+
 **其他编码工具：**
 
 - **Codex：** 参见 [.codex/INSTALL.md](.codex/INSTALL.md) — clone 后 symlink 到 `~/.agents/skills/`
