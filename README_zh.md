@@ -130,7 +130,7 @@ Session B: /swf:load → 从 Linear + git 恢复全部上下文 → 直接继续
 | 7 | 投稿后 | 审稿、修回 |
 | 8 | 发表 | 校对、推广 |
 
-**Phase 不是严格线性的。** Methods 初稿在 Phase 1 末就能写，等实验的间隙可以做图。`/swf:plan` 会主动建议可提前做的任务。
+**Phase 不是严格线性的。** Methods 初稿在 Phase 1 末就能写，等实验的间隙可以做图。`/swf:plan-next` 会主动建议可提前做的任务。
 
 ## 全部 Skills（16 个）
 
@@ -280,7 +280,7 @@ Agent 逐个领取任务、执行、在 Linear issue 上写完成摘要评论、
 
 ```bash
 cd <project-path>
-/swf:context              # 项目到哪了、正在做什么
+/swf:load                 # 项目到哪了、正在做什么
 /swf:next dev             # 领一个 dev 任务
 # ...用 superpowers 开发...
 /swf:done                 # 完成、记录、看下一个

@@ -130,7 +130,7 @@ Each project has 8 phases, mapped to Linear Project Milestones:
 | 7 | Post-Submission | Peer review, revision |
 | 8 | Publication | Proofing, promotion |
 
-**Phases are not strictly linear.** You can draft Methods as early as late Phase 1, and create figures during experiment downtime. `/swf:plan` proactively suggests tasks that can be started ahead of schedule.
+**Phases are not strictly linear.** You can draft Methods as early as late Phase 1, and create figures during experiment downtime. `/swf:plan-next` proactively suggests tasks that can be started ahead of schedule.
 
 ## All Skills (16)
 
@@ -280,7 +280,7 @@ This can work, but you lose control over design decisions, phase transitions, an
 
 ```bash
 cd <project-path>
-/swf:context              # Where is the project? What's in progress?
+/swf:load                 # Where is the project? What's in progress?
 /swf:next dev             # Pick up a dev task
 # ...use Superpowers for development...
 /swf:done                 # Complete, record, see what's next
