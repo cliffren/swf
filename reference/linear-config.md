@@ -1,9 +1,12 @@
 # Linear Workspace Configuration
 
-## Workspace
-- Name: Tao's Linear
-- URL: https://linear.app/taos-space22
-- Team: Tao's Linear (ID: 54459849-d067-435d-af6e-f3d7304139d7)
+## Workspace & Team
+- SWF uses whatever Linear workspace the Linear MCP server is authenticated against. Nothing is hardcoded.
+- Team resolution rule (shared by all skills and the project-manager agent):
+  1. Call `list_teams`.
+  2. Exactly one team → use it.
+  3. Multiple teams → ask the user which team SWF should use, then reuse that answer for the session.
+- `/swf:init-linear` creates the labels and the Ideas/Archive projects in that team.
 
 ## Projects
 - **Ideas** — 立项评估漏斗，所有新想法在此管理

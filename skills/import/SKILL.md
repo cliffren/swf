@@ -45,7 +45,7 @@ Bring an existing research project into the SWF workflow without disrupting curr
 
 4. **Create Linear Project:**
    - Name: project name
-   - Team: Tao's Linear
+   - Team: resolve via `list_teams` (single team → use it; multiple → ask the user). See `${CLAUDE_SKILL_DIR}/../reference/linear-config.md`
    - Description:
      ```
      <one-line description>

@@ -23,7 +23,7 @@ Graduate an idea from the Ideas project into a full independent project.
 
 3. **Create Linear Project:**
    - Name: the project name
-   - Team: Tao's Linear
+   - Team: resolve via `list_teams` (single team → use it; multiple → ask the user). See `${CLAUDE_SKILL_DIR}/../reference/linear-config.md`
    - Description 包含（创建 repo 后回填）:
      ```
      <one-line description>

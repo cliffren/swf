@@ -16,16 +16,13 @@ claude mcp add --transport http linear-server https://mcp.linear.app/mcp -s user
 gh auth status
 
 # 1. Add the marketplace
-/plugin marketplace add cliffren/swf
+claude plugin marketplace add cliffren/swf
 
-# 2. Install the plugin
-/plugin install swf@cliffren-swf
-
-# 3. Reload
-/reload-plugins
+# 2. Install the plugin (the marketplace name comes from marketplace.json: swf-marketplace)
+claude plugin install swf@swf-marketplace
 ```
 
-Steps 1-3 are run inside the Claude Code prompt (not bash). After installation, run `/swf:init-linear` to set up your Linear workspace.
+Then restart Claude Code, or run `/reload-plugins` inside it. Steps 1-2 also work as slash commands inside Claude Code (`/plugin marketplace add cliffren/swf`, `/plugin install swf@swf-marketplace`). After installation, run `/swf:init-linear` to set up your Linear workspace.
 
 ## Quick Start
 
