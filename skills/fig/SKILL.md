@@ -9,6 +9,13 @@ argument-hint: "[framework|plot|assemble|list]"
 
 Create, iterate, and organize publication-quality figures for papers.
 
+## Design standard: use NFDS if it is installed
+
+Before drawing or planning any figure, check whether the NFDS figure design system is installed: the `nfds-figure` skill appears in your skill list, or `~/.claude/skills/nfds-figure/` exists.
+
+- If it is installed, invoke the `nfds-figure` skill, or read the `RULES.md` it points to, and follow it. Its rules take precedence over the defaults in this file: figure size in mm, 5–7 pt text, lowercase panel letters, its palette and its layout and narrative rules. The defaults it overrides include the ≥ 12 pt font size, uppercase panel labels, the colour palette, and the draw.io shape and line sizes.
+- If it is not installed, use the defaults below.
+
 ## Sub-commands
 
 `$ARGUMENTS[0]` determines the action. If omitted, show help.
